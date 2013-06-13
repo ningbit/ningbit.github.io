@@ -11,7 +11,7 @@ categories:
 
 ### Game Start
 
-After day one of using **Git**, I developed this fantastic (and insane) idea to write a simple **Git-based adventure game** loosely based on my favorite video game series of all-time, **The Legend of Zelda**. My initial idea was to use git branches and branch switching to represent the different "worlds" containing "treasures" to be collected, like
+After day one of using **Git** during a lesson [@TheFlatironSchool](http://flatironschool.com "@FlatironSchool"), I developed this fantastic (and insane) idea to write a simple **Git-based adventure game** loosely based on my favorite video game series of all-time, **The Legend of Zelda**. My initial idea was to use git branches and branch switching to represent the different "worlds" containing "treasures" to be collected, like
 
 - *Forest branch*….. w/ master sword
 
@@ -19,22 +19,22 @@ After day one of using **Git**, I developed this fantastic (and insane) idea to 
 
 - *Mountain branch*…. w/ fairy in a bottle
 
-This "branch-world" idea quickly became preposterous as Git branches are not meant to be completely distinct entities, but rather different _**versions**_ of a **master branch** and represent small changes in files and structures. I realized I'd need a cleaner, more sensible approach.
+This "branch-world" idea quickly became preposterous as Git branches are not meant to be completely distinct entities, but rather different _**versions**_ of a **master branch** and represent modest changes in files and structures. I realized I'd need a cleaner, more sensible approach.
 
 ### Tutorial-Based Game
 
-It became apparent that if I wanted to build a sensible game, I would have to study Git and understand its usage. I would need to acknowledge and draw upon Git's power as a **version control** system and think deeply about the commands and a logical workflow where Git is applied.
+It became apparent that if I wanted to build a sensible game, I would need to actually _study_ Git and understand how it should be used. I would have to acknowledge and draw upon Git's power as a **version control system** and create a context to utilize that workflow.
 
     8-Bit Git: The Legend of BASHellda
 
-Thus, _The Legend of BASHellda_ was born. It would be a game played from the BASH command line. It would use sensible, beginner-friendly git commands, like
+Thus, _The Legend of BASHellda_ was born. It would be a tutorial -- masking as a game -- played from the BASH command line. It would use sensible, beginner-friendly git commands, like
 
     git status
     git branch
     git checkout
     git merge
     git add .
-    git commit -am "updated files"
+    git commit -am "update files"
 
 And to provide instructions to the player, I would have Princess BASHellda leave notes (in .txt format) to guide the player on what to do next.
 
@@ -43,7 +43,7 @@ And to provide instructions to the player, I would have Princess BASHellda leave
 ### Logistics and Building a Story
 
 
-The classic story involves a hero saving a princess from an evil wizard using a few key items, such as a magical sword. Here is how I mapped those items
+The classic story of _The Legend of Zelda_ involves a hero saving a princess from an evil wizard through the use of key items, such as a magical sword. Here is how I mapped those characters and items
 
     Link (Hero)       => $User
     Princess Zelda    => Princess BASHellda
@@ -60,7 +60,7 @@ And here are the branches or "worlds"
     backup            = Contains "backup" of Bit Palace
     cursed_dungeon    = Princess is locked up in zip file
 
-Sample note from the Princess in .txt file accessible by running "cat" command in BASH
+Sample note from the Princess in .txt file accessible by running *cat* command in BASH
 
     Dear $User,
 
@@ -78,32 +78,32 @@ Sample note from the Princess in .txt file accessible by running "cat" command i
 
 ### Building the Local Repository
 
-Figuring out the story and gameplay logistics was half the battle. The other half was actually coding and "building the levels" in the repository. Here are some of the major issues I ran into as I built and played through the game:
+Figuring out the gameplay logistics was half the battle. The other half was actually coding and "building the levels" in the repository. Here are some of the major issues I ran into as I built and played through the initial stages of the game:
 
 - In what finished form should the repository be pushed up to GitHub so it is playable when cloned
 - Would the player have access to the different branches after cloning
 - How to deal with the branch merges so there were no conflicts
-- How to leave clear and concise instructions with a difficulty of "medium" so as not to make the game too easy and boring or unplayable and confusing
+- How to leave clear and concise instructions with moderate difficulty so as not to make the game too easy and boring or unplayable and confusing for a beginner
 
 In building the repository, order of creating branches and adding folders and files was extremely important as to not cross-pollute other branches. For example, I would want
 
-    rubble.txt
+    bit_palace/rubble.txt
 
 to be replaced by
 
-    bit_palace.txt
+    bit_palace/bit_palace.txt
 
 after running
 
     git merge backup
 
-on the master branch.
+on the master branch. Here's what the palace "looks like" after the player merges from backup.
 
 ![Bit Palace](http://www.ningmusic.com/img/bit_palace.png)
 
+I'll continue this blog post next week with details about the finished game and maybe even some player feedback!
 
-
-#### Next week, read Part TWO of this series
+#### Next week, read Part TWO of this series ->
 
 
 
