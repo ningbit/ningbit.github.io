@@ -80,9 +80,9 @@ Sample note from the Princess in .txt file accessible by running *cat* command i
 
 Figuring out the gameplay logistics was half the battle. The other half was actually coding and "building the levels" in the repository. Here are some of the major issues I ran into as I built and played through the initial stages of the game:
 
-- In what finished form should the repository be pushed up to GitHub so it is playable when cloned
-- Would the player have access to the different branches after cloning
-- How to deal with the branch merges so there were no conflicts
+- In what finished form should the repository be so, when pushed up to GitHub, it is playable when cloned
+- Will the player have access to the different branches after cloning
+- How to deal with the branch merges so there are no conflicts
 - How to leave clear and concise instructions with moderate difficulty so as not to make the game too easy and boring or unplayable and confusing for a beginner
 
 In building the repository, order of creating branches and adding folders and files was extremely important as to not cross-pollute other branches. For example, I would want
