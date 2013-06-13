@@ -5,6 +5,7 @@ date: 2013-06-12 20:07
 comments: true
 categories:
 ---
+By Ning Yap [[@ningbit]](http://www.twitter.com/ningbit)
 
 ![LOZ NES game](http://www.consoleclassix.com/info_img/Legend_of_Zelda_NES_ScreenShot1.jpg)
 >I made some games, but I'm pretending like I didn't because they all turned out weird. -- **Shigeru Miyamoto** (creator of The Legend Of Zelda)
