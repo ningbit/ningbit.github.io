@@ -13,17 +13,17 @@ By Ning Yap
 
 ####1) Grab the Bootstrap Package
 
-Visit [Bootstrap](http://twitter.github.io/bootstrap/) and download the zip file. Then, copy the **css**, **js** and **img** folders into a '**public**' folder of your Sinatra site directory.
+Visit [Bootstrap](http://twitter.github.io/bootstrap/) and download the zip file. Then, copy the **css**, **js** and **img** folders into the '**public**' folder of your Sinatra site directory.
 
 ![public folder](http://www.ningmusic.com/img/public-css-js-img.png)
 
-####2) Edit Your layout.erb
+####2) Edit Your Template (layout.erb)
 
 Edit your **layout.erb** to include **bootstrap.css** within the **\<head\>** tags.
 
 ![css head](http://www.ningmusic.com/img/css-head.jpg)
 
-**bootstrap.js** goes at the end of your **\<body\>** tags.
+**bootstrap.js** goes within your **\<body\>** tags at the end.
 
 ![js body](http://www.ningmusic.com/img/js-body.jpg)
 
@@ -34,7 +34,7 @@ Note the positioning of **\<%= yield %\>** **ERB** tag which will take content f
 
 ![bootstrap navbar](http://www.ningmusic.com/img/bootstrap-navbar.png)
 
-Consider your nav bar, which will sit on top of every page that uses your default layout. Bootstrap makes it very easy to do drop down menus and also includes a search bar. Use ERB (each loops) to dynamically generate menu items! For example, in the Genres dropdown menu, the list of genres is dynamically calculated as in the number of songs in each category.
+Consider your nav bar, which will sit on top of every page that uses your default layout. Bootstrap makes it very easy to create drop down menus and also includes a search bar. Use ERB (each loops) to dynamically generate menu items! For example, in the Genres dropdown menu, the list of genres is dynamically calculated as in the number of songs in each category.
 
 {% include_code lang:css navbar_example.erb %}
 
@@ -59,11 +59,11 @@ Don't be afraid to edit Bootstrap's CSS file to suit your needs. For example, I 
 ![public folder](http://www.ningmusic.com/img/btn-example.jpg)
 ![public folder](http://www.ningmusic.com/img/btn-large.jpg)
 
-####6) Know your grid
+####7) Know your grid
 
 Utilize "container" class and "span#" to take advantage of pre-configured grid/responsive design. Be aware of block elements and inline element, spans classes can collapse responsively
 
-####7) Getting creative with href-ing and routes
+####8) Getting creative with href-ing and routes
 
 Achieve flow by having objects point to each other and organize them both visually and logically. Add/drop features are more advanced and are "hidden" away, drop buttons are given class of danger to highlight destructive nature. Dynamic pages/data are more interesting, if you've built robust Classes/Objects, pull the data into the page with ERB, make the site feel alive!
 
