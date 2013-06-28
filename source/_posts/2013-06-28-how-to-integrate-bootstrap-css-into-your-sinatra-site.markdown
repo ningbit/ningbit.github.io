@@ -56,7 +56,7 @@ Having a navigation bar means making decisions about your routes! Consider your 
 
 ####6) Edit the CSS
 
-Don't be afraid to edit Bootstrap's CSS file to suit your needs. For example, I edited the ".btn" class to achieve rounder larger buttons to hold artists and songs. Refer to the [Components](http://twitter.github.io/bootstrap/components.html) section of the documentation
+Don't be afraid to edit Bootstrap's CSS file to suit your needs. For example, I edited the ".btn" class to achieve rounder larger buttons to hold artists and songs. Refer to the [Components](http://twitter.github.io/bootstrap/components.html) section of the documentation for more tips and examples of included styles.
 
 ![btn-example](http://www.ningmusic.com/img/btn-example.jpg)
 ![btn-large](http://www.ningmusic.com/img/btn-large.jpg)
