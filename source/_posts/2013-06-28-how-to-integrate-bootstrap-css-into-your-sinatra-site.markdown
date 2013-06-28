@@ -34,9 +34,9 @@ Note the positioning of **\<%= yield %\>** **ERB** tag which will take content f
 
 ![bootstrap navbar](http://www.ningmusic.com/img/bootstrap-navbar.png)
 
-Consider your nav bar, which will sit on top of every page that uses your default layout. Bootstrap makes it very easy to create drop down menus and also includes a search bar. Use ERB (each loops) to dynamically generate menu items! For example, in the Genres dropdown menu, the list of genres is dynamically calculated as in the number of songs in each category.
+Consider your nav bar, which will sit on top of every page that uses your default layout. Bootstrap makes it very easy to create drop down menus and also includes a search bar. Use ERB (each loops) to dynamically generate menu items! For example, in the Genres dropdown menu, the list of genres is dynamically calculated as is the total number of songs in each category.
 
-{% include_code lang:css navbar_example.erb %}
+{% include_code Navbar CSS and ERB lang:css navbar_example.erb %}
 
 ####4) Sinatra Routes
 
@@ -65,7 +65,7 @@ Utilize "container" class and "span#" to take advantage of pre-configured grid/r
 
 ####8) Getting creative with href-ing and routes
 
-Achieve flow by having objects point to each other and organize them both visually and logically. Add/drop features are more advanced and are "hidden" away, drop buttons are given class of danger to highlight destructive nature. Dynamic pages/data are more interesting, if you've built robust Classes/Objects, pull the data into the page with ERB, make the site feel alive!
+Achieve flow by having objects point to each other and organize them both visually and logically. Add/drop features are more advanced and are "hidden" away, drop buttons are given class of danger to highlight destructive nature. Ultimately, dynamic pages/data are more interesting, so if you've built robust Classes/Objects in your code, pull the data into the page with ERB and make your site feel alive!
 
 ![bootstrap-dashboard](http://www.ningmusic.com/img/bootstrap-dashboard.jpg)
 
