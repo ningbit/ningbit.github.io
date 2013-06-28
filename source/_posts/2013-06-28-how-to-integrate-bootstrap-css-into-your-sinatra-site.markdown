@@ -52,6 +52,8 @@ Having a navigation bar means making decisions about your routes! Consider your 
     }
     </style>
 
+Ooh, look at that "escheresque" background:
+
 ![background-example](http://www.ningmusic.com/img/bootstrap-background.jpg)
 
 ####6) Edit the CSS
@@ -61,11 +63,11 @@ Don't be afraid to edit Bootstrap's CSS file to suit your needs. For example, I 
 ![btn-example](http://www.ningmusic.com/img/btn-example.jpg)
 ![btn-large](http://www.ningmusic.com/img/btn-large.jpg)
 
-####7) Know your grid
+####7) Know Your Grid
 
 Utilize "container" class and "span#" to take advantage of pre-configured grid/responsive design. Be aware of block elements and inline elements. "Span" classes can collapse responsively as the window resizes.
 
-####8) Getting creative with href-ing and routes
+####8) Getting Creative with Href-ing and Routes
 
 Achieve flow by having objects point to each other and organize them both visually and logically. Add/drop features are more advanced and are "hidden" away, drop buttons are given class of danger to highlight destructive nature. Ultimately, dynamic pages/data are more interesting, so if you've built robust Classes/Objects in your code, pull the data into the page with ERB and make your site feel alive!
 
