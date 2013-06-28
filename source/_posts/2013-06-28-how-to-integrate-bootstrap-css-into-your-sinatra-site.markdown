@@ -13,7 +13,7 @@ By Ning Yap
 
 ####1) Grab the Bootstrap Package
 
-Visit [Bootstrap](http://twitter.github.io/bootstrap/) and download the zip file. Then, copy the **css**, **js** and **img** folders into the '**public**' folder of your Sinatra site directory.
+Visit [Bootstrap](http://twitter.github.io/bootstrap/) and download the zip file. Unzip and copy the **css**, **js** and **img** folders into the '**public**' folder of your Sinatra site directory.
 
 ![public folder](http://www.ningmusic.com/img/public-css-js-img.png)
 
@@ -34,7 +34,7 @@ Note the positioning of **\<%= yield %\>** **ERB** tag which will take content f
 
 ![bootstrap navbar](http://www.ningmusic.com/img/bootstrap-navbar.png)
 
-Consider your nav bar, which will sit on top of every page that uses your default layout. Bootstrap makes it very easy to create drop down menus and also includes a search bar. Use ERB (each loops) to dynamically generate menu items! For example, in the Genres dropdown menu, the list of genres is dynamically calculated as is the total number of songs in each category.
+Consider your nav bar, which will sit on top of every page that uses your default layout. Bootstrap makes it very easy to create drop down menus and also includes a search bar. Use ERB (each loops) to dynamically generate menu items! For example, in the Genres dropdown menu, the list of genres is dynamically calculated, as is the total number of songs in each category.
 
 {% include_code Navbar CSS and ERB lang:css navbar_example.erb %}
 
@@ -51,6 +51,8 @@ Having a navigation bar means making decisions about your routes! Consider your 
     background-image:url('/img/escheresque_ste.png');
     }
     </style>
+
+![background-example](http://www.ningmusic.com/img/bootstrap-background.jpg)
 
 ####6) Edit the CSS
 
