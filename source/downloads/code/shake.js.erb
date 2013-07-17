@@ -1,0 +1,4 @@
+if (/^[a-zA-Z -]*$/.test(newitem) && newitem !== ""){
+  $("h4#list").html(htmlstring + commastring + newitem);
+  $("#cart-item").val("");}
+else {$("#shop-cart").effect("shake");}
