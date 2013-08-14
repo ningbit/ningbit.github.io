@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "JQuery and JavaScript, Meet ERb (Embedded Ruby)! Why Hello!"
+title: "Recipe Book UI: Building a Custom JQuery User Interface"
 date: 2013-07-16 23:21
 comments: true
-categories: 
+categories:
 ---
 By Ning Yap ([@ningbit](https://github.com/ningbit))
 
-![RecipeUI](http://www.ningmusic.com/img/pantry_ingredients.png)
+![RecipeUI](/images/2013/pantry_ingredients.png)
 Play with the completed UI at [recipeui.herokuapp.com](http://recipeui.herokuapp.com/)!
 
 ##UI Driven Development
@@ -16,7 +16,7 @@ The battle between front-end and back-end continues to be waged. But who cares a
 
 ##Relevant JQuery Code:
 
-    $("[HTML element]) 
+    $("[HTML element])
 selects the element, by element id being quite common and efficient.
 
     .click()
@@ -41,7 +41,7 @@ __Idea:__ *The pantry contains all ingredients available to the chef to create h
 
 __UI Concept:__ How about clicking on visual representations of ingredients in the pantry and "popping" them into the recipe list? Sounds awesome right?
 
-![CreateRecipeUI](http://www.ningmusic.com/img/create_recipe2.png)
+![CreateRecipeUI](/images/2013/create_recipe2.png)
 
 ##Death To The Dropdown!
 
@@ -51,7 +51,7 @@ __UI Concept:__ How about clicking on visual representations of ingredients in t
 
 First, suffer deeply through the difficulty of implementing a fun UI interface via a JavaScriptERB partial from scratch. Just kidding! It'll be much better for you since you can just borrow my template. :)
 
-####Here's what the brute-force code looks like: 
+####Here's what the brute-force code looks like:
 
 {% include_code RecipeUI lang:js recipeui.js.erb %}
 
@@ -81,7 +81,7 @@ Check out the [repo](https://github.com/ningbit/recipes-lab) for how-to.
 
 ##Switch Up. Make a Shopping Cart Text Field!
 
-![ShoppingCart](http://www.ningmusic.com/img/ingredient_shopping.png)
+![ShoppingCart](/images/2013/ingredient_shopping.png)
 
 Same principles here. Clicking add should pop the typed text into the cart. It takes just a few different lines of code. When you
 "submit" the form (text field) by clicking the "add" button, it will try to redirect you to a new page. Kill that action by putting this code in the "action" attribute of the form.
@@ -100,10 +100,10 @@ How about a cool feature to highlight the new items you just bought? Use the .up
 
 Make the colors of the buttons refer to their usage!
 
-![RecipeButtons](http://www.ningmusic.com/img/recipe_buttons.png)
+![RecipeButtons](/images/2013/recipe_buttons.png)
 
 How about smartly listing the ingredients in the main recipe window? Show the first four ingredients and then append a "..." if there are more ingredients. With ERb, the world is your oyster recipe.
 
-![RecipeBook](http://www.ningmusic.com/img/recipe-book.png)
+![RecipeBook](/images/2013/recipe-book.png)
 
 Now go generate your own ERb.js UI!

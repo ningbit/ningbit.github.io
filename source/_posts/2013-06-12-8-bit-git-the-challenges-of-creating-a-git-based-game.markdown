@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "8-Bit Git: the Challenges of Creating a Git-Based Game (Part One)"
+title: "8-Bit Git: the Challenges of Creating a Git-Based Game"
 date: 2013-06-12 20:07
 comments: true
 categories:
 ---
 By Ning Yap [[@ningbit]](http://www.twitter.com/ningbit)
 
-![LOZ NES game](http://www.consoleclassix.com/info_img/Legend_of_Zelda_NES_ScreenShot1.jpg)
+![LOZ NES game](/images/2013/Legend_of_Zelda_NES_ScreenShot1.jpg)
 >I made some games, but I'm pretending like I didn't because they all turned out weird. -- **Shigeru Miyamoto** (creator of The Legend Of Zelda)
 
 ### Game Start
@@ -39,7 +39,7 @@ Thus, _The Legend of BASHellda_ was born. It would be a tutorial -- masking as a
 
 And to provide instructions to the player, I would have Princess BASHellda leave notes (in .txt format) to guide the player on what to do next.
 
-![Princess's Note](http://www.ningmusic.com/img/BASHellda.png)
+![Princess's Note](/images/2013/BASHellda.png)
 
 ### Logistics and Building a Story
 
@@ -100,11 +100,11 @@ after running
 
 on the master branch. Here's what the palace "looks like" after the player merges from backup.
 
-![Bit Palace](http://www.ningmusic.com/img/bit_palace.png)
+![Bit Palace](/images/2013/bit_palace.png)
 
-I'll continue this blog post next week with details about the finished game and maybe even some player feedback!
+### Future Ideas
 
-#### Next week, read Part TWO of this series ->
+This is an ongoing project that will improve as I continue to learn and use git. I think I will build out different stages of the game to show the more advanced techniques of git that I don't yet know. Stay tuned!
 
 
 
