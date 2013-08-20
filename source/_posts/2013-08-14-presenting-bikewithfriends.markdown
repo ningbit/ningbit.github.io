@@ -10,6 +10,8 @@ By Ning Yap
 
 {% imgcap '/images/2013/nytm_group.jpg' 400 320 Team BikeWithFriends at NYTM 8/7/13 (Qool Photo) %}
 
+###### (*Watch our meetup presentation on [YouTube](http://youtu.be/r8zFreW4pek) or at [nytm.org](http://mlb.mlb.com/media/player/entry.jsp?calendar_event_id=14-378209-2013-08-07&source=NYTM)*)
+
 ### Being the Expert
 
 I've never had to present in front of such a large group before. Generally, the larger the group, the more you might feel impostor syndrome, thinking "I'm not qualified to claim expertise on stage for this chosen topic." But this time, I didn't feel that at all.
@@ -40,7 +42,7 @@ You can read my teammate Anisha's [blog entry](http://nishconsumerism.com/2013/0
 
 {% img right /images/2013/bwf-script.jpg Script %}
 
-There are perhaps many reasons to script, but the first and most important one is to _condense_ your thoughts into **real words and sentences**. Yes, you do want to have the freedom to phrase things how you wish on presentation day. But no matter what, you have to say it _some_ way, and better to hash those options out on the page first. 
+There are perhaps many reasons to script, but the first and most important one is to _condense_ your thoughts into **real words and sentences**. Yes, you do want to have the freedom to phrase things how you wish on presentation day. But no matter what, you have to say it _some_ way, and better to hash those options out on the page first.
 
 To clarify: By script I don't mean just an outline with bullet points. I mean actual, fully-worded sentences like the ones you might see on a teleprompter for a stump speech. Yes, there is an off chance that you may come up with that brilliant line that most expresses what you want to convey on the spot that day. But there is just as likely a chance you try to go off the cuff and say the exact wrong thing (or just confuse the hell out of your audience).
 
@@ -52,9 +54,9 @@ Through this slow process of making these decisions jointly, our talk was distil
 
 ### Getting the Flow Down Pat
 
-What about the downside of scripting and, subsequently, rehearsing? That our personalities would die through the process, our jokes would be canned, and we would seem totally fake? I'll hold off on answering that for a minute. 
+What about the downside of scripting and, subsequently, rehearsing? That our personalities would die through the process, our jokes would be canned, and we would seem totally fake? I'll hold off on answering that for a minute.
 
-Our next issue in rehearsing the script was that we were still way over. Even with a revised script, it was too long (7+ minutes), and we were still stumbling over certain sections. Some badges were just too difficult to explain (like the Biker Gang badge) and some transitions ("I'll hand the baton over to Josh now to explain further steps…") were flow-killing. 
+Our next issue in rehearsing the script was that we were still way over. Even with a revised script, it was too long (7+ minutes), and we were still stumbling over certain sections. Some badges were just too difficult to explain (like the Biker Gang badge) and some transitions ("I'll hand the baton over to Josh now to explain further steps…") were flow-killing.
 
 Here's where having a script is a major benefit. You not only can make decisions on what to cut as a group, you **visually have a map of how to cut and condense certain sections**. I took over some of my teammate Josh's lines. My transition sentence became Katie's first line. I could cue Anisha's line about social media and tweeting the badges you've just earned by ending my segment with "and you get a Bridge Crossing badge for that."
 
@@ -62,21 +64,31 @@ With the script, we achieved last minute efficiencies up till even 30 minutes be
 
 ### Rehearsed (to Death), and Ready to Crush It!
 
-{% img left /images/2013/nytm-qa.jpg 480 Script %}
+{% imgcap left /images/2013/nytm-backstage.jpg Backstage just before the talk %}
 
 By the time of the event, we were all sick of our script. None of it seemed funny to any of us. Our rehearsals had been earnest, but definitely lacking in personality. Each of us could mouth the words of the other teammates as they were saying their lines since it was mostly verbatim out of the script. Had we drilled enough, or too much? Would we be understood? Would we be able the convey the fun experience that is BikeWithFriends and the passion we put into building it?
 
-Maybe the title of this section is **too negative**. Because the talk actually went over better than any of us could have dreamed. All of us on the team were more than just a little surprised, we were genuinely shocked we got so many laughs and such a warm response from the NYTM crowd. They are an awesome bunch, by the way! 
+Maybe the title of this section is **too negative**. Because the talk actually went over better than any of us could have dreamed. All of us on the team were more than just a little surprised, we were genuinely shocked we got so many laughs and such a warm response from the NYTM crowd. They are an awesome bunch, by the way!
 
-We felt very comfortable on stage. The script was on the podium, flanked by the presentation laptop, but we didn't even need it there. The amount of work that went into the script paid off completely. None of us were lost at all during the presentation. We were easily able to keep the flow of the talk going, hand off the mics to each other, and navigate through the app with complete ease. 
+We felt very comfortable on stage. The script was on the podium, flanked by the presentation laptop, but we didn't even need it there. The amount of work that went into the script paid off completely. None of us were lost at all during the presentation. We were easily able to keep the flow of the talk going, hand off the mics to each other, and navigate through the app with complete ease.
 
 Though nothing happening on the stage was extemporaneous, with the energy in the room -- and our own adrenaline and hearts racing -- we could feel our words connecting with the crowd as if they were spontaneous. After the first laughs, right after Josh said "our app does _none of these_" and waved his hand horizontally, we knew we were going to be fine.
 
 ### The Code to Crack The Nerves
 
-I know this blog entry has said nothing about our app, BikeWithFriends. Yes, the topic which you choose to speak about needs to be exciting on its own merit. But actually presenting something provides it's own specific challenges. 
+I know this blog entry has said nothing about our app, BikeWithFriends. Yes, the topic which you choose to speak about needs to be exciting on its own merit. But actually presenting something provides it's own specific challenges.
 
 Just like how you might approach a coding problem, breaking down and controlling for as many variables as you can, we approached this presentation in the same manner. The most obvious unknown was probably "__how do we handle our nerves?__" Would we break down in front of the massive audience at Skirball, unable to form even one coherent sentence? We couldn't let that be a possibility.
 
-Instead, we wrote a code: the script. The rehearsals amounted to refactoring that code to guarantee that it ran smoothly and efficiently. Even if we couldn't control for the nerves, we prepared and "coded" for all the parts we could control:, what we would say and how we would say it. Once we were on stage, I remember stumbling on some words here and there. But that didn't matter to much. The nerves didn't knock me off my game because -- channeling Sandi Metz -- I was the expert on the topic, I had prepared and rehearsed exactly what I was going to say and knew exactly why I wanted to say it
+{% imgcap left /images/2013/nytm-qa.jpg Q&A section, relieved that the presentation part is over %}
+
+Instead, __we wrote a code: the script__. The rehearsals amounted to refactoring that code to guarantee that it ran smoothly and efficiently. Even if we couldn't control for the nerves, we prepared and "coded" for all the parts we could control: __what we would say and how we would say it__. Once we were on stage, I remember stumbling on some words here and there. But that didn't matter too much. The nerves didn't knock me off my game because -- channeling Sandi Metz -- I was the __expert on the topic__, I had __prepared and rehearsed exactly what I was going to say__ and knew exactly __why I wanted to say it__.
+
+### Conclusions
+
+The event really flew by for us. We had less than a week to prepare for the talk, but all the pieces somehow managed to fall into place. It certainly helped that we had already presented our project twice before the event. I'm sure I'll have more thoughts about how to structure a talk when I have to do it again, but I am glad that it's over.
+
+Perhaps the final side note I have is that once you are onstage, near the mics, be careful what you say. Especially if there is a livestream being captured for the event. In our excitement, one of my teammates may have used some colorful language, exclaiming "We're going to #$%@ crush this!" I'm so glad we did.
+
+###### (*Watch our meetup presentation on [YouTube](http://youtu.be/r8zFreW4pek) or at [nytm.org](http://mlb.mlb.com/media/player/entry.jsp?calendar_event_id=14-378209-2013-08-07&source=NYTM)*)
 
