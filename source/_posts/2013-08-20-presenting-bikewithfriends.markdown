@@ -88,7 +88,7 @@ Instead, __we wrote a code: the script__. The rehearsals amounted to refactoring
 
 The event really flew by for us. We had less than a week to prepare for the talk, but all the pieces somehow managed to fall into place. It certainly helped that we had already presented our project twice before the event. I'm sure I'll have more thoughts about how to structure a talk when I have to do it again, but I am glad that it's over.
 
-Perhaps the final side note I have is that once you are onstage, near the mics, be careful what you say. Especially if there is a livestream being captured for the event. In our excitement, one of my teammates may have used some colorful language, exclaiming "We're going to #$%@ crush this!" I'm so glad we did.
+Perhaps the final side note I have is that once you are onstage, near the mics, be careful what you say. Especially if there is a livestream being captured for the event. In our excitement, one of my teammates may have used some colorful language, exclaiming "We're going to #$%@ crush this!" In the end, I'm so glad we did.
 
 ###### (*Watch our meetup presentation on [YouTube](http://youtu.be/r8zFreW4pek) or at [nytm.org](http://mlb.mlb.com/media/player/entry.jsp?calendar_event_id=14-378209-2013-08-07&source=NYTM)*)
 
