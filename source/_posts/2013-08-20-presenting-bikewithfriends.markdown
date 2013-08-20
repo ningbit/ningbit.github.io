@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Presenting BikeWithFriends at NY Tech Meetup as 'Hack of the Month'"
-date: 2013-08-14 12:12
+date: 2013-08-20 12:12
 comments: true
 categories:
 ---
