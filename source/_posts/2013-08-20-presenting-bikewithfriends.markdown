@@ -8,15 +8,15 @@ categories:
 
 By Ning Yap
 
-{% imgcap '/images/2013/nytm_group.jpg' 400 320 Team BikeWithFriends at NYTM 8/7/13 (Qool Photo) %}
+{% imgcap '/images/2013/nytm_group.jpg' 500 400 Team BikeWithFriends at NYTM 8/7/13 (Qool Photo) %}
 
-###### (*Watch our meetup presentation on [YouTube](http://youtu.be/r8zFreW4pek) or at [nytm.org](http://mlb.mlb.com/media/player/entry.jsp?calendar_event_id=14-378209-2013-08-07&source=NYTM)*)
+###### (*Watch the [official livestream](http://mlb.mlb.com/media/player/entry.jsp?calendar_event_id=14-378209-2013-08-07&source=NYTM&start_time=54) of our meetup presentation at [nytm.org](http://nytm.org/blog/entry/13-06-2013/lineup-for-august-7-ny-techmeetup) or on [YouTube](http://youtu.be/r8zFreW4pek)*)
 
 ### Being the Expert
 
-I've never had to present in front of such a large group before. Generally, the larger the group, the more you might feel impostor syndrome, thinking "I'm not qualified to claim expertise on stage for this chosen topic." But this time, I didn't feel that at all.
+I've never had to present in front of such a large group before. Generally, the larger the group, the more you might feel impostor syndrome, thinking "among these peers, I can't possibly claim to be the expert." But this time, I didn't feel that at all.
 
-Here was a unique situation where I was presenting on something my team and I had created. Only we knew of the intricate workings of the app, the genesis and the idea, the struggle and breakthroughs, and even at times the doubt of it's success and viability. We are the experts on all of that. No one knows more about that than us. We were telling our own story from our point of view. We had lived it and it was ours.
+Here was a unique situation where I was presenting on something my team and I had created. Only we knew of the intricate workings of the app, the genesis of the idea, the struggle and breakthroughs, and (at times) even the doubt of it's success and viability. We are the experts on all of that. No one knows more about that than us. We were telling our own story from our point of view. We had lived it and it was ours.
 
 ### Ownership and Being Brave
 
@@ -36,13 +36,13 @@ At NYTM, we would be given 5 minutes to talk about Bike With Friends. Our task w
 
 I don't have to say how poorly our first run-through went the Sunday prior. Each trying to say too much in our individual minute, we reiterated each other's points, choked on the things we wanted to say, and overall, made an oratorical mess. In a way it was good how bad it was. It was clear we wouldn't be able to "wing" the presentation the same way we had at our NYC on Rails Meetup at school or at Civic Hack Night/#BetaNYC. By "wing", I mean "loosely organized" with "things we want to talk about". We would have to script.
 
-You can read my teammate Anisha's [blog entry](http://nishconsumerism.com/2013/08/05/new-york-tech-meetup-bikewithfriends/) on scripting our talk for NYTM (she wrote it before the talk took place). In it she notes how scripting was a challenge for her. She felt it prevented her from expressing her spontaneity and fun personality, limiting her from being able to feel out her audience. I agree how scripting limits you. But the limiting is entirely appropriate for this kind of talk. When you have 4 people on stage trying to each get their ideas in, and you only have 5 minutes, you must script!
+You can read my teammate Anisha's [blog entry](http://nishconsumerism.com/2013/08/05/new-york-tech-meetup-bikewithfriends/) on scripting our talk for NYTM (she wrote it before the talk took place). In it she notes how scripting was a challenge for her. She felt it prevented her from expressing her spontaneity and fun personality, limiting her ability to feel out her audience. I agree how scripting limits you. But the limiting is entirely appropriate for this kind of talk. When you have 4 people on stage trying to each get their ideas in, and you only have 5 minutes, you must script!
 
 ### The Script
 
 {% img right /images/2013/bwf-script.jpg Script %}
 
-There are perhaps many reasons to script, but the first and most important one is to _condense_ your thoughts into **real words and sentences**. Yes, you do want to have the freedom to phrase things how you wish on presentation day. But no matter what, you have to say it _some_ way, and better to hash those options out on the page first.
+There are perhaps many reasons to script, but the most important reason by far is so you _condense_ your thoughts into **real words and sentences**. Yes, you do want to have the freedom to phrase things how you wish on presentation day. But no matter what, you have to say it _some_ way, and better to hash those options out on the page first.
 
 To clarify: By script I don't mean just an outline with bullet points. I mean actual, fully-worded sentences like the ones you might see on a teleprompter for a stump speech. Yes, there is an off chance that you may come up with that brilliant line that most expresses what you want to convey on the spot that day. But there is just as likely a chance you try to go off the cuff and say the exact wrong thing (or just confuse the hell out of your audience).
 
@@ -54,7 +54,7 @@ Through this slow process of making these decisions jointly, our talk was distil
 
 ### Getting the Flow Down Pat
 
-What about the downside of scripting and, subsequently, rehearsing? That our personalities would die through the process, our jokes would be canned, and we would seem totally fake? I'll hold off on answering that for a minute.
+What about the downsides of scripting and, subsequently, rehearsing? That our personalities would die through the process, our jokes would be canned, and we would seem totally fake? I'll hold off on answering that for a minute.
 
 Our next issue in rehearsing the script was that we were still way over. Even with a revised script, it was too long (7+ minutes), and we were still stumbling over certain sections. Some badges were just too difficult to explain (like the Biker Gang badge) and some transitions ("I'll hand the baton over to Josh now to explain further steps…") were flow-killing.
 
@@ -76,7 +76,7 @@ Though nothing happening on the stage was extemporaneous, with the energy in the
 
 ### The Code to Crack The Nerves
 
-I know this blog entry has said nothing about our app, BikeWithFriends. Yes, the topic which you choose to speak about needs to be exciting on its own merit. But actually presenting something provides it's own specific challenges.
+I know this blog entry has said nothing about our app, BikeWithFriends. Yes, the topic which you choose to speak about needs to be exciting on its own merit. But actually presenting something provides its own specific challenges.
 
 Just like how you might approach a coding problem, breaking down and controlling for as many variables as you can, we approached this presentation in the same manner. The most obvious unknown was probably "__how do we handle our nerves?__" Would we break down in front of the massive audience at Skirball, unable to form even one coherent sentence? We couldn't let that be a possibility.
 
@@ -88,7 +88,6 @@ Instead, __we wrote a code: the script__. The rehearsals amounted to refactoring
 
 The event really flew by for us. We had less than a week to prepare for the talk, but all the pieces somehow managed to fall into place. It certainly helped that we had already presented our project twice before the event. I'm sure I'll have more thoughts about how to structure a talk when I have to do it again, but I am glad that it's over.
 
-Perhaps the final side note I have is that once you are onstage, near the mics, be careful what you say. Especially if there is a livestream being captured for the event. In our excitement, one of my teammates may have used some colorful language, exclaiming "We're going to #$%@ crush this!" In the end, I'm so glad we did.
+Perhaps the final side note I have is that once you are onstage, near the mics, be careful what you say. Especially if there is a livestream being captured for the event. In our excitement, one of my teammates may have used some colorful language, exclaiming "We're going to #$%@ crush this!" Oops. But, in the end, I'm so glad we did.
 
-###### (*Watch our meetup presentation on [YouTube](http://youtu.be/r8zFreW4pek) or at [nytm.org](http://mlb.mlb.com/media/player/entry.jsp?calendar_event_id=14-378209-2013-08-07&source=NYTM)*)
-
+###### (*Watch the [official livestream](http://mlb.mlb.com/media/player/entry.jsp?calendar_event_id=14-378209-2013-08-07&source=NYTM&start_time=54) of our meetup presentation at [nytm.org](http://nytm.org/blog/entry/13-06-2013/lineup-for-august-7-ny-techmeetup) or on [YouTube](http://youtu.be/r8zFreW4pek)*)
