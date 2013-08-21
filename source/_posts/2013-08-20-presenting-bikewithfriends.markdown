@@ -16,7 +16,7 @@ By Ning Yap
 
 I've never had to present in front of such a large group before. Generally, the larger the group, the more you might feel impostor syndrome, thinking "among these peers, I can't possibly claim to be the expert." But this time, I didn't feel that at all.
 
-Here was a unique situation where I was presenting on something my team and I had created. Only we knew of the intricate workings of the app, the genesis of the idea, the struggle and breakthroughs, and (at times) even the doubt of it's success and viability. We are the experts on all of that. No one knows more about that than us. We were telling our own story from our point of view. We had lived it and it was ours.
+Here was a unique situation where I was presenting on something my team and I had created. Only we knew of the intricate workings of the app, the genesis of the idea, the struggle and breakthroughs, and (at times) even the doubt of its success and viability. We are the experts on all of that. No one knows more about that than us. We were telling our own story from our point of view. We had lived it and it was ours.
 
 ### Ownership and Being Brave
 
