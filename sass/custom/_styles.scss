@@ -11,10 +11,10 @@ html {
 background: #9DC4D1 url('/images/line-tile.png?1374037235') top left;
 }
 
-body > header {
-  background: url('/images/background.jpg');
-  height: 120px;
-}
+// body > header {
+//   background: url('/images/background.jpg');
+//   height: 120px;
+// }
 
 body > header h2 {
   color: #d2d2d2;
@@ -34,5 +34,15 @@ body {
 }
 
 p {
+
+}
+
+div.blog-index {
+// background: #f8f8f8 url('/images/linen.png') top left;
+
+}
+
+aside.sidebar {
+// background: #f8f8f8 url('/images/light_wool.png') top left;
 
 }
