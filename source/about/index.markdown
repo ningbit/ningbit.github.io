@@ -1,9 +1,9 @@
 ---
 layout: about
 title: "About The Author"
-comments: true
-sharing: true
-footer: true
+comments: false
+sharing: false
+footer: false
 ---
 
 ![Playing Cello in Gantry State Park](/images/about.jpg)
