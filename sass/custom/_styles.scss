@@ -5,3 +5,34 @@ a:link{text-decoration:none}
 a:visited{color:#1863a1}
 a:focus{color:#0181eb}
 a:hover{color:#0181eb}
+
+html {
+// background: #ADD8E6 url('/images/line-tile.png?1374037235') top left;
+background: #9DC4D1 url('/images/line-tile.png?1374037235') top left;
+}
+
+body > header {
+  background: url('/images/background.jpg');
+  height: 120px;
+}
+
+body > header h2 {
+  color: #d2d2d2;
+}
+
+body > nav {
+  background: url('/images/noise.png?1374037235'),linear-gradient(#e0e0e0,#cccccc,#b0b0b0);
+  border-bottom: none;
+  padding-top: 0;
+  padding-bottom: 0;
+
+}
+
+body {
+  font-family: serif;
+  // font-size: 1em;
+}
+
+p {
+
+}
