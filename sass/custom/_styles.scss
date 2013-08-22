@@ -11,6 +11,11 @@ html {
 background: #9DC4D1 url('/images/line-tile.png?1374037235') top left;
 }
 
+body {
+  font-family: serif;
+  // font-size: 1em;
+}
+
 // body > header {
 //   background: url('/images/background.jpg');
 //   height: 120px;
@@ -28,22 +33,14 @@ body > nav {
 
 }
 
-body {
-  font-family: serif;
-  // font-size: 1em;
+
+body>nav li+li {
+  // padding-right: 10px;
+  // margin-left: 20px;
 }
+
 
 p {
-
-}
-
-div.blog-index {
-// background: #f8f8f8 url('/images/linen.png') top left;
-
-}
-
-aside.sidebar {
-// background: #f8f8f8 url('/images/light_wool.png') top left;
 
 }
 
