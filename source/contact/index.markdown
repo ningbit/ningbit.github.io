@@ -5,7 +5,7 @@ comments: false
 sharing: false
 footer: true
 ---
-<img class="right" src="/images/citibiking.jpg">
+<img class="right" id="contact-pic" src="/images/citibiking.jpg">
 <span class="contact-name">Ning Yap</span>
 Email: ning.yap@gmail.com <br>
 Twitter: [@ningbit](http://twitter.com/ningbit) <br>
