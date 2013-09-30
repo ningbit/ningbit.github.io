@@ -87,7 +87,7 @@ The structure is fairly straighforward, CSS files belong in **css**, documentati
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <p class="code-p">Keep those styles in line with <a href="http://necolas.github.io/normalize.css/">normalize.css</a>!
-<em>"Normalize.css makes browsers render all elements more consistently and in line with modern standards. It precisely targets only the styles that need normalizing."</em> How facist.</p>
+<em>"Normalize.css makes browsers render all elements more consistently and in line with modern standards. It precisely targets only the styles that need normalizing."</em> How fascist.</p>
     <link rel="stylesheet" href="css/normalize.css">
 
 <p class="code-p">Why is this script loaded at the top (rather than the bottom) of the page, possibly <a href="http://elegantcode.com/2010/03/30/your-javascript-goes-where/">causing the whole page to hang</a> if your servers are slow? That's because this JavaScript library, <a href="http://modernizr.com/">Modernizr</a>, helps older browsers handle HTML5 elements; therefore, it must load before any HTML5-specific code can be read.</p>
