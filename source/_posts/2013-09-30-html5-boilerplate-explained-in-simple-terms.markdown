@@ -12,7 +12,7 @@ By Ning Yap
 _Get the [latest version](http://html5boilerplate.com/) of HTML5 Boilerplate and read about Rails integration [here](http://railsapps.github.io/rails-html5-boilerplate.html)_
 
 ## What is HTML5 Boilerplate?
-Created by Paul Irish and Divya Manian more than 4 years ago, it is in the words of its creators _"a **good starting template** of **HTML** and **CSS** and a **folder structure** that works... Baked into it is **years of best practices** from **front-end development professionals**."_ Since then, it's been polished and iterated upon by [hundreds of developers](https://github.com/h5bp/html5-boilerplate/tree/v4.3.0). 
+A template from which one can more easily build a standards-aware website. It is in the words of one of its creators Paul Irish _"a **good starting template** of **HTML** and **CSS** and a **folder structure** that works... Baked into it is **years of best practices** from **front-end development professionals**."_ Since 2010, it's been polished and iterated upon by [hundreds of developers](https://github.com/h5bp/html5-boilerplate/tree/v4.3.0). 
 
 ####Here's a quick list of features:
 - Cross-browser compatibility (Chrome, Firefox, Safari, Opera, IE)
