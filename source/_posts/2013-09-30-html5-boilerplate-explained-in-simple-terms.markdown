@@ -177,7 +177,7 @@ Would have resulted in a much shorter blog post from me. Ah well...
 ## Summary
 Now you know why HTML5 Boilerplate exists. It is a beacon of hope in this [hostile world](http://dev.opera.com/articles/view/unobtrusive-javascript/) of way too many options for browsing. At least with the boilerplate, you have a few crowd-sourced signposts pointing the way.
 
-I must say, front-end development has really come a long way since the good ol' GeoCities days. So tell me when will people stop [confusing the roles of __web designer__ and __web developer__](http://thumbnails.visually.netdna-cdn.com/web-designer-vs-web-developer_502919932c2d2_w594.jpg)?
+I must say, front-end development has really come a long way since the good ol' GeoCities days. So tell me, when will people stop [confusing the roles of __web designer__ and __web developer__](http://thumbnails.visually.netdna-cdn.com/web-designer-vs-web-developer_502919932c2d2_w594.jpg)?
 
 {% imgcap 'http://cdn.arstechnica.net/2009/04/24/geocities1.png' 480 480 The Good Ol' Days, Bless 'er Heart %}
 
