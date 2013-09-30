@@ -51,6 +51,10 @@ hgroup {
         filter: dropshadow(color=#000000, offx=1, offy=1);}
 }
 
+#contact-pic {
+  margin-bottom:1.5em;
+}
+
 .contact-name {
   margin-bottom:0.5em;
   font-family:Optima, sans-serif;
@@ -59,6 +63,6 @@ hgroup {
   display:block;
 }
 
-#contact-pic {
-  margin-bottom:1.5em;
+.code-p {
+  margin-bottom:0.5em
 }
