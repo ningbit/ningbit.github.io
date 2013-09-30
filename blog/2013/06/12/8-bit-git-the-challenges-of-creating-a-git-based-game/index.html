@@ -1,0 +1,394 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>8-Bit Git: the Challenges of Creating a Git-Based Game - Coding is Awesome</title>
+  <meta name="author" content="Ning Yap">
+
+  
+  <meta name="description" content="By Ning Yap [@ningbit] I made some games, but I&rsquo;m pretending like I didn&rsquo;t because they all turned out weird. &mdash; Shigeru Miyamoto ( &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://ningbit.github.io/blog/2013/06/12/8-bit-git-the-challenges-of-creating-a-git-based-game">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Coding is Awesome" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <style>
+body > header {
+  background: #222 url('/images/background.jpg');
+}
+
+@media screen and (max-width: 520px){
+ body > header {
+  background: #222 url('/images/background_small.jpg') no-repeat;
+ }
+}
+</style>
+
+<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-43308747-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner">  <style>
+color:red;
+
+</style>
+<hgroup>
+  <h1><a href="/">Coding is Awesome</a></h1>
+  
+    <h2>A Creative Blog for Ningbit</h2>
+  
+</hgroup>
+
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:ningbit.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/about">About</a></li>
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/projects">Projects</a></li>
+  <li><a href="/contact">Contact</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">8-Bit Git: The Challenges of Creating a Git-Based Game</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-12T20:07:00-04:00" pubdate data-updated="true">Jun 12<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>By Ning Yap <a href="http://www.twitter.com/ningbit">[@ningbit]</a></p>
+
+<p><img src="/images/2013/Legend_of_Zelda_NES_ScreenShot1.jpg" alt="LOZ NES game" /></p>
+
+<blockquote><p>I made some games, but I&rsquo;m pretending like I didn&rsquo;t because they all turned out weird. &mdash; <strong>Shigeru Miyamoto</strong> (creator of The Legend Of Zelda)</p></blockquote>
+
+<h3>Game Start</h3>
+
+<p>After day one of using <strong>Git</strong> during a lesson <a href="http://flatironschool.com" title="@FlatironSchool">@TheFlatironSchool</a>, I developed this fantastic (and insane) idea to write a simple <strong>Git-based adventure game</strong> loosely based on my favorite video game series of all-time, <strong>The Legend of Zelda</strong>. My initial idea was to use git branches and branch switching to represent the different &ldquo;worlds&rdquo; containing &ldquo;treasures&rdquo; to be collected, like</p>
+
+<ul>
+<li><p><em>Forest branch</em>….. w/ master sword</p></li>
+<li><p><em>Desert branch</em>…. w/ ocarina</p></li>
+<li><p><em>Mountain branch</em>…. w/ fairy in a bottle</p></li>
+</ul>
+
+
+<p>This &ldquo;branch-world&rdquo; idea quickly became preposterous as Git branches are not meant to be completely distinct entities, but rather different <em><strong>versions</strong></em> of a <strong>master branch</strong> and represent modest changes in files and structures. I realized I&rsquo;d need a cleaner, more sensible approach.</p>
+
+<h3>Tutorial-Based Game</h3>
+
+<p>It became apparent that if I wanted to build a sensible game, I would need to actually <em>study</em> Git and understand how it should be used. I would have to acknowledge and draw upon Git&rsquo;s power as a <strong>version control system</strong> and create a context to utilize that workflow.</p>
+
+<pre><code>8-Bit Git: The Legend of BASHellda
+</code></pre>
+
+<p>Thus, <em>The Legend of BASHellda</em> was born. It would be a tutorial &mdash; masking as a game &mdash; played from the BASH command line. It would use sensible, beginner-friendly git commands, like</p>
+
+<pre><code>git status
+git branch
+git checkout
+git merge
+git add .
+git commit -am "update files"
+</code></pre>
+
+<p>And to provide instructions to the player, I would have Princess BASHellda leave notes (in .txt format) to guide the player on what to do next.</p>
+
+<p><img src="/images/2013/BASHellda.png" alt="Princess's Note" /></p>
+
+<h3>Logistics and Building a Story</h3>
+
+<p>The classic story of <em>The Legend of Zelda</em> involves a hero saving a princess from an evil wizard through the use of key items, such as a magical sword. Here is how I mapped those characters and items</p>
+
+<pre><code>Link (Hero)       =&gt; $User
+Princess Zelda    =&gt; Princess BASHellda
+Ganon             =&gt; Prince of Darkness "BSOD"
+Triforce          =&gt; Git
+Master Sword      =&gt; Sword of RM (on "master" branch)
+Hyrule Kingdom    =&gt; Land of 8-bit
+Hyrule Castle     =&gt; Bit Palace
+Locked Chest/Door =&gt; password-protected zip-file
+</code></pre>
+
+<p>And here are the branches or &ldquo;worlds&rdquo;</p>
+
+<pre><code>master            = Bit Palace has been reduced to rubble by BSOD
+backup            = Contains "backup" of Bit Palace
+cursed_dungeon    = Princess is locked up in zip file
+</code></pre>
+
+<p>Sample note from the Princess in .txt file accessible by running <em>cat</em> command in BASH</p>
+
+<pre><code>Dear $User,
+
+By the time you read this, BSOD will have already locked me away in the
+cursed dungeon remote branch. But no fear, you have been granted the powers
+of Git. The first thing to do is find out where you are. Type:
+
+git status
+
+Currently, you are on the master branch. You should see "On branch master"
+and more output. To find out additional local branches, type:
+
+git branch
+...
+</code></pre>
+
+<h3>Building the Local Repository</h3>
+
+<p>Figuring out the gameplay logistics was half the battle. The other half was actually coding and &ldquo;building the levels&rdquo; in the repository. Here are some of the major issues I ran into as I built and played through the initial stages of the game:</p>
+
+<ul>
+<li>In what finished form should the repository be so, when pushed up to GitHub, it is playable when cloned</li>
+<li>Will the player have access to the different branches after cloning</li>
+<li>How to deal with the branch merges so there are no conflicts</li>
+<li>How to leave clear and concise instructions with moderate difficulty so as not to make the game too easy and boring or unplayable and confusing for a beginner</li>
+</ul>
+
+
+<p>In building the repository, order of creating branches and adding folders and files was extremely important as to not cross-pollute other branches. For example, I would want</p>
+
+<pre><code>bit_palace/rubble.txt
+</code></pre>
+
+<p>to be replaced by</p>
+
+<pre><code>bit_palace/bit_palace.txt
+</code></pre>
+
+<p>after running</p>
+
+<pre><code>git merge backup
+</code></pre>
+
+<p>on the master branch. Here&rsquo;s what the palace &ldquo;looks like&rdquo; after the player merges from backup.</p>
+
+<p><img src="/images/2013/bit_palace.png" alt="Bit Palace" /></p>
+
+<h3>Future Ideas</h3>
+
+<p>This is an ongoing project that will improve as I continue to learn and use git. I think I will build out different stages of the game to show the more advanced techniques of git that I don&rsquo;t yet know. Stay tuned!</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Ning Yap</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-12T20:07:00-04:00" pubdate data-updated="true">Jun 12<span>th</span>, 2013</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ningbit.github.io/blog/2013/06/12/8-bit-git-the-challenges-of-creating-a-git-based-game/" data-via="ningbit" data-counturl="http://ningbit.github.io/blog/2013/06/12/8-bit-git-the-challenges-of-creating-a-git-based-game/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/06/16/quit-playing-games-with-my-ruby-code/" title="Next Post: Quit Playing Games with My Ruby Code">Quit Playing Games with My Ruby Code &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/09/30/html5-boilerplate-explained-in-simple-terms/">HTML5 Boilerplate Explained in Simple Terms</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/08/20/presenting-bikewithfriends/">Presenting BikeWithFriends at NY Tech Meetup as 'Hack of the Month'</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/07/30/building-bikewithfriends/">Building BikeWithFriends</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/07/16/jquery-and-javascript/">Recipe Book UI: Building a Custom JQuery User Interface</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/28/how-to-integrate-bootstrap-css-into-your-sinatra-site/">How to Integrate Bootstrap CSS Into Your Sinatra Site, and Get More Out of Your Objects Using ERB</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h1>Twitter</h1>
+    <a class="twitter-timeline" href="https://twitter.com/ningbit" data-widget-id="367720470310711296">Tweets by @ningbit</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+  <h1>Tweets @ningbit</h1>
+    <a class="twitter-timeline" href="https://twitter.com/search?q=%40ningbit" data-widget-id="370245630251126784">Tweets about @ningbit</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+</section>
+
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/ningbit">@ningbit</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'ningbit',
+            count: 3,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Ning Yap -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

@@ -1,134 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>Coding is Awesome</title>
-  <meta name="author" content="Ning Yap">
-
-  
-  <meta name="description" content="By Ning Yap Get the latest version of HTML5 Boilerplate and read about Rails integration here What is HTML5 Boilerplate? A template from which one &hellip;">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  <link rel="canonical" href="http://ningbit.github.io">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="Coding is Awesome" type="application/atom+xml">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <style>
-body > header {
-  background: #222 url('/images/background.jpg');
-}
-
-@media screen and (max-width: 520px){
- body > header {
-  background: #222 url('/images/background_small.jpg') no-repeat;
- }
-}
-</style>
-
-<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-
-  
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-43308747-1']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
-
-
-</head>
-
-<body   >
-  <header role="banner">  <style>
-color:red;
-
-</style>
-<hgroup>
-  <h1><a href="/">Coding is Awesome</a></h1>
-  
-    <h2>A Creative Blog for Ningbit</h2>
-  
-</hgroup>
-
-
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<form action="http://google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:ningbit.github.io" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
-<ul class="main-navigation">
-  <li><a href="/about">About</a></li>
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-  <li><a href="/projects">Projects</a></li>
-  <li><a href="/contact">Contact</a></li>
-</ul>
-
-</nav>
-  <div id="main">
-    <div id="content">
-      <div class="blog-index">
-  
-  
-  
-    <article>
-      
-  <header>
+  <title><![CDATA[Coding is Awesome]]></title>
+  <link href="http://ningbit.github.io/atom.xml" rel="self"/>
+  <link href="http://ningbit.github.io/"/>
+  <updated>2013-09-30T06:41:49-04:00</updated>
+  <id>http://ningbit.github.io/</id>
+  <author>
+    <name><![CDATA[Ning Yap]]></name>
     
-      <h1 class="entry-title"><a href="/blog/2013/09/30/html5-boilerplate-explained-in-simple-terms/">HTML5 Boilerplate Explained in Simple Terms</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
   
+  <entry>
+    <title type="html"><![CDATA[HTML5 Boilerplate Explained In Simple Terms]]></title>
+    <link href="http://ningbit.github.io/blog/2013/09/30/html5-boilerplate-explained-in-simple-terms/"/>
+    <updated>2013-09-30T19:00:00-04:00</updated>
+    <id>http://ningbit.github.io/blog/2013/09/30/html5-boilerplate-explained-in-simple-terms</id>
+    <content type="html"><![CDATA[<p>By Ning Yap</p>
 
-
-<time datetime="2013-09-30T19:00:00-04:00" pubdate data-updated="true">Sep 30<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>By Ning Yap</p>
-
-<p><img src="/images/2013/html5-boilerplate.png" alt="HTML5 Boilerplate" />
+<p><img src="http://ningbit.github.io/images/2013/html5-boilerplate.png" alt="HTML5 Boilerplate" />
 <em>Get the <a href="http://html5boilerplate.com/">latest version</a> of HTML5 Boilerplate and read about Rails integration <a href="http://railsapps.github.io/rails-html5-boilerplate.html">here</a></em></p>
 
 <h2>What is HTML5 Boilerplate?</h2>
@@ -189,7 +81,7 @@ color:red;
 <blockquote><p>Hello world! This is HTML5 Boilerplate.</p></blockquote>
 
 <div style="max-height:400px;overflow:scroll">
-<figure class='code'><figcaption><span>index.html (index.html)</span> <a href='/downloads/code/index.html'>download</a></figcaption>
+<figure class='code'><figcaption><span>index.html (index.html)</span> <a href='http://ningbit.github.io/downloads/code/index.html'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -354,7 +246,7 @@ color:red;
 <p class="code-p">Bow down to almighty Google, sourcer of jQuery. Actually, you should use Google CDN (Content Delivery Network) because the visitor&#8217;s browser will likely have a cached version of jQuery from their site&#8230; and Google&#8217;s servers are probably way faster than yours anyway. So yes, bow down to Lord Google.</p>
 
 
-<pre><code>&lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"&gt;&lt;/script&gt;
+<pre><code>&lt;script src="http://ningbit.github.io//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"&gt;&lt;/script&gt;
 &lt;script&gt;window.jQuery || document.write('&lt;script src="js/vendor/jquery-1.10.2.min.js"&gt;&lt;\/script&gt;')&lt;/script&gt;
 &lt;script src="js/plugins.js"&gt;&lt;/script&gt;
 &lt;script src="js/main.js"&gt;&lt;/script&gt;
@@ -380,7 +272,7 @@ color:red;
 <h2>Abbreviated CSS rundown</h2>
 
 <div style="max-height:300px;overflow:scroll">
-  <figure class='code'><figcaption><span>main.css (main.css)</span> <a href='/downloads/code/main.css'>download</a></figcaption>
+  <figure class='code'><figcaption><span>main.css (main.css)</span> <a href='http://ningbit.github.io/downloads/code/main.css'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -1001,7 +893,7 @@ color:red;
 <br />
 
 
-<p><span class='caption-wrapper'><img class='caption' src='/images/2013/clearfix.jpg'' width='450' height='450' alt='' title=''><span class='caption-text'></span></span></p>
+<p><span class='caption-wrapper'><img class='caption' src='http://ningbit.github.io/images/2013/clearfix.jpg'' width='450' height='450' alt='' title=''><span class='caption-text'></span></span></p>
 
 <p class="code-p">Friends don&#8217;t let friends float divs non-clearfixed.</p>
 
@@ -1047,7 +939,7 @@ color:red;
 
 <p><strong>THIS IS SPARTA!!!!</strong>&rsquo;s version of HTML5 Boilerplate</p>
 
-<figure class='code'><figcaption><span>index.html (the_real_html5_boilerplate.html)</span> <a href='/downloads/code/the_real_html5_boilerplate.html'>download</a></figcaption>
+<figure class='code'><figcaption><span>index.html (the_real_html5_boilerplate.html)</span> <a href='http://ningbit.github.io/downloads/code/the_real_html5_boilerplate.html'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -1094,44 +986,17 @@ color:red;
 <p>I must say, front-end development has really come a long way since the good ol&#8217; GeoCities days. So tell me, when will people stop <a href="http://thumbnails.visually.netdna-cdn.com/web-designer-vs-web-developer_502919932c2d2_w594.jpg">confusing the roles of <strong>web designer</strong> and <strong>web developer</strong></a>?</p>
 
 <p><span class='caption-wrapper'><img class='caption' src='http://cdn.arstechnica.net/2009/04/24/geocities1.png'' width='480' height='480' alt='The Good Ol' Days, Bless 'er Heart' title='The Good Ol' Days, Bless 'er Heart'><span class='caption-text'>The Good Ol&#8217; Days, Bless &lsquo;er Heart</span></span></p>
-</div>
+]]></content>
+  </entry>
   
-  
+  <entry>
+    <title type="html"><![CDATA[Presenting BikeWithFriends at NY Tech Meetup as 'Hack of the Month']]></title>
+    <link href="http://ningbit.github.io/blog/2013/08/20/presenting-bikewithfriends/"/>
+    <updated>2013-08-20T12:12:00-04:00</updated>
+    <id>http://ningbit.github.io/blog/2013/08/20/presenting-bikewithfriends</id>
+    <content type="html"><![CDATA[<p>By Ning Yap</p>
 
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/08/20/presenting-bikewithfriends/">Presenting BikeWithFriends at NY Tech Meetup as &#8216;Hack of the Month&#8217;</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-08-20T12:12:00-04:00" pubdate data-updated="true">Aug 20<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>By Ning Yap</p>
-
-<p><span class='caption-wrapper'><img class='caption' src='/images/2013/nytm_group.jpg'' width='500' height='400' alt='Team BikeWithFriends at NYTM 8/7/13 (Qool Photo)' title='Team BikeWithFriends at NYTM 8/7/13 (Qool Photo)'><span class='caption-text'>Team BikeWithFriends at NYTM 8/7/13 (Qool Photo)</span></span></p>
+<p><span class='caption-wrapper'><img class='caption' src='http://ningbit.github.io/images/2013/nytm_group.jpg'' width='500' height='400' alt='Team BikeWithFriends at NYTM 8/7/13 (Qool Photo)' title='Team BikeWithFriends at NYTM 8/7/13 (Qool Photo)'><span class='caption-text'>Team BikeWithFriends at NYTM 8/7/13 (Qool Photo)</span></span></p>
 
 <h6>(<em>Watch the <a href="http://mlb.mlb.com/media/player/entry.jsp?calendar_event_id=14-378209-2013-08-07&amp;source=NYTM&amp;start_time=54">official livestream</a> of our meetup presentation at <a href="http://nytm.org/blog/entry/13-06-2013/lineup-for-august-7-ny-techmeetup">nytm.org</a> or on <a href="http://youtu.be/r8zFreW4pek">YouTube</a></em>)</h6>
 
@@ -1143,7 +1008,7 @@ color:red;
 
 <h3>Ownership and Being Brave</h3>
 
-<p><span class='caption-wrapper right'><img class='caption' src='/images/2013/sandi_metz_goruco2011.jpg' width='' height='' alt='Sandi Metz at GORUCO 2011' title='Sandi Metz at GORUCO 2011'><span class='caption-text'>Sandi Metz at GORUCO 2011</span></span></p>
+<p><span class='caption-wrapper right'><img class='caption' src='http://ningbit.github.io/images/2013/sandi_metz_goruco2011.jpg' width='' height='' alt='Sandi Metz at GORUCO 2011' title='Sandi Metz at GORUCO 2011'><span class='caption-text'>Sandi Metz at GORUCO 2011</span></span></p>
 
 <p>Sandi Metz gave a brilliant talk at <a href="http://flatironschool.com">The Flatiron School</a> two months ago where she shared some of her experiences speaking and consulting in the tech field. She bravely acknowledged that even she had felt like an impostor at times, wondering if she was qualified to author a <a href="http://www.amazon.com/Practical-Object-Oriented-Design-Ruby-Addison-Wesley/dp/0321721330/">Ruby guide (Principles of Object Oriented Programing in Ruby)</a>  or to consult on a project and claim that things should be done as she recommended. For years, she even avoided giving talks altogether!</p>
 
@@ -1153,7 +1018,7 @@ color:red;
 
 <h3>Rehearse, Reduce, Rehearse, Simplify, Rehearse! And Script!</h3>
 
-<p><span class='caption-wrapper left'><img class='caption' src='/images/2013/nytm-josh.jpg' width='' height='' alt='Josh introduces BikeWithFriends' title='Josh introduces BikeWithFriends'><span class='caption-text'>Josh introduces BikeWithFriends</span></span></p>
+<p><span class='caption-wrapper left'><img class='caption' src='http://ningbit.github.io/images/2013/nytm-josh.jpg' width='' height='' alt='Josh introduces BikeWithFriends' title='Josh introduces BikeWithFriends'><span class='caption-text'>Josh introduces BikeWithFriends</span></span></p>
 
 <p>At NYTM, we would be given 5 minutes to talk about Bike With Friends. Our task would be to explain our app &mdash; all 4 of us on stage &mdash; in a way that was not only clear, concise, and simple, but also conveyed our excitement about the app. The real challenge was not that we were speaking to a large audience, it would be getting our message across in that condensed format. I knew there was a real possibility of us not meeting that mark.</p>
 
@@ -1163,7 +1028,7 @@ color:red;
 
 <h3>The Script</h3>
 
-<p><img class="right" src="/images/2013/bwf-script.jpg" title="Script" ></p>
+<p><img class="right" src="http://ningbit.github.io/images/2013/bwf-script.jpg" title="Script" ></p>
 
 <p>There are perhaps many reasons to script, but the most important reason by far is so you <em>condense</em> your thoughts into <strong>real words and sentences</strong>. Yes, you do want to have the freedom to phrase things how you wish on presentation day. But no matter what, you have to say it <em>some</em> way, and better to hash those options out on the page first.</p>
 
@@ -1187,7 +1052,7 @@ color:red;
 
 <h3>Rehearsed (to Death), and Ready to Crush It!</h3>
 
-<p><span class='caption-wrapper left'><img class='caption' src='/images/2013/nytm-backstage.jpg' width='' height='' alt='Backstage just before the talk' title='Backstage just before the talk'><span class='caption-text'>Backstage just before the talk</span></span></p>
+<p><span class='caption-wrapper left'><img class='caption' src='http://ningbit.github.io/images/2013/nytm-backstage.jpg' width='' height='' alt='Backstage just before the talk' title='Backstage just before the talk'><span class='caption-text'>Backstage just before the talk</span></span></p>
 
 <p>By the time of the event, we were all sick of our script. None of it seemed funny to any of us. Our rehearsals had been earnest, but definitely lacking in personality. Each of us could mouth the words of the other teammates as they were saying their lines since it was mostly verbatim out of the script. Had we drilled enough, or too much? Would we be understood? Would we be able the convey the fun experience that is BikeWithFriends and the passion we put into building it?</p>
 
@@ -1203,7 +1068,7 @@ color:red;
 
 <p>Just like how you might approach a coding problem, breaking down and controlling for as many variables as you can, we approached this presentation in the same manner. The most obvious unknown was probably &ldquo;<strong>how do we handle our nerves?</strong>&rdquo; Would we break down in front of the massive audience at Skirball, unable to form even one coherent sentence? We couldn&rsquo;t let that be a possibility.</p>
 
-<p><span class='caption-wrapper left'><img class='caption' src='/images/2013/nytm-qa.jpg' width='' height='' alt='Q&A section, relieved that the presentation part is over' title='Q&A section, relieved that the presentation part is over'><span class='caption-text'>Q&amp;A section, relieved that the presentation part is over</span></span></p>
+<p><span class='caption-wrapper left'><img class='caption' src='http://ningbit.github.io/images/2013/nytm-qa.jpg' width='' height='' alt='Q&A section, relieved that the presentation part is over' title='Q&A section, relieved that the presentation part is over'><span class='caption-text'>Q&amp;A section, relieved that the presentation part is over</span></span></p>
 
 <p>Instead, <strong>we wrote a code: the script</strong>. The rehearsals amounted to refactoring that code to guarantee that it ran smoothly and efficiently. Even if we couldn&rsquo;t control for the nerves, we prepared and &ldquo;coded&rdquo; for all the parts we could control: <strong>what we would say and how we would say it</strong>. Once we were on stage, I remember stumbling on some words here and there. But that didn&rsquo;t matter too much. The nerves didn&rsquo;t knock me off my game because &mdash; channeling Sandi Metz &mdash; I was the <strong>expert on the topic</strong>, I had <strong>prepared and rehearsed exactly what I was going to say</strong> and knew exactly <strong>why I wanted to say it</strong>.</p>
 
@@ -1214,44 +1079,17 @@ color:red;
 <p>Perhaps the final side note I have is that once you are onstage, near the mics, be careful what you say. Especially if there is a livestream being captured for the event. In our excitement, one of my teammates may have used some colorful language, exclaiming &ldquo;We&rsquo;re going to #$%@ crush this!&rdquo; Oops. But, in the end, I&rsquo;m so glad we did.</p>
 
 <h6>(<em>Watch the <a href="http://mlb.mlb.com/media/player/entry.jsp?calendar_event_id=14-378209-2013-08-07&amp;source=NYTM&amp;start_time=54">official livestream</a> of our meetup presentation at <a href="http://nytm.org/blog/entry/13-06-2013/lineup-for-august-7-ny-techmeetup">nytm.org</a> or on <a href="http://youtu.be/r8zFreW4pek">YouTube</a></em>)</h6>
-</div>
+]]></content>
+  </entry>
   
-  
+  <entry>
+    <title type="html"><![CDATA[Building BikeWithFriends]]></title>
+    <link href="http://ningbit.github.io/blog/2013/07/30/building-bikewithfriends/"/>
+    <updated>2013-07-30T23:26:00-04:00</updated>
+    <id>http://ningbit.github.io/blog/2013/07/30/building-bikewithfriends</id>
+    <content type="html"><![CDATA[<p>By Ning Yap</p>
 
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/07/30/building-bikewithfriends/">Building BikeWithFriends</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-07-30T23:26:00-04:00" pubdate data-updated="true">Jul 30<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>By Ning Yap</p>
-
-<p><img src="/images/2013/bwf-login.png" alt="BikeWithFriends" /></p>
+<p><img src="http://ningbit.github.io/images/2013/bwf-login.png" alt="BikeWithFriends" /></p>
 
 <blockquote><p>I feel like I just gave birth to something. I feel drained, but at least the app is out there in the world now, living and breathing on it&rsquo;s own… (sort of)</p></blockquote>
 
@@ -1259,7 +1097,7 @@ color:red;
 
 <p>The genesis of the app was really more an area of focus than anything specific. After completing Ashley William&rsquo;s <a href="https://github.com/ashleygwilliams/student-citibike">CitiBike excercise</a> for class at <a href="http://flatironschool.com">The Flatiron School</a>, I really wanted to play more with CitiBike JSON data and maps. I discussed with my group my hope to create some rough <strong>proof of concepts</strong> about ideas we could turn into projects.</p>
 
-<p><span class='caption-wrapper left'><img class='caption' src='/images/2013/poc-maps.png' width='' height='' alt='Proof of Concept w/ Bike Route' title='Proof of Concept w/ Bike Route'><span class='caption-text'>Proof of Concept w/ Bike Route</span></span></p>
+<p><span class='caption-wrapper left'><img class='caption' src='http://ningbit.github.io/images/2013/poc-maps.png' width='' height='' alt='Proof of Concept w/ Bike Route' title='Proof of Concept w/ Bike Route'><span class='caption-text'>Proof of Concept w/ Bike Route</span></span></p>
 
 <p>I turned to my old, trusted friend Google to research what was already out there. There were a good amount of sites visualizing macro data regarding available bikes at all the stations, which was pretty cool, but I knew early on it wasn&rsquo;t worth trying to replicate that sort of implementation. The available bikes/docks data is available to everyone, and I saw multiple sites using that data in the same ways.</p>
 
@@ -1267,9 +1105,9 @@ color:red;
 
 <p>Another focus for me was playing with map features as I think having a visual component to interact with is always fun and adds interest. The first POC involved getting bike directions to show up between two selected stations. The second POC gave you the ability to type in any address and it would show you the closest bike station to you.</p>
 
-<p><span class='caption-wrapper right'><img class='caption' src='/images/2013/poc-biketrippr.png' width='400' height='280' alt='Proof of Concept 2 w/ Address Search' title='Proof of Concept 2 w/ Address Search'><span class='caption-text'>Proof of Concept 2 w/ Address Search</span></span></p>
+<p><span class='caption-wrapper right'><img class='caption' src='http://ningbit.github.io/images/2013/poc-biketrippr.png' width='400' height='280' alt='Proof of Concept 2 w/ Address Search' title='Proof of Concept 2 w/ Address Search'><span class='caption-text'>Proof of Concept 2 w/ Address Search</span></span></p>
 
-<p><span class='caption-wrapper right'><img class='caption' src='/images/2013/poc-biketrippr2.png' width='400' height='290' alt='Proof of Concept 2 w/ Nearest Station' title='Proof of Concept 2 w/ Nearest Station'><span class='caption-text'>Proof of Concept 2 w/ Nearest Station</span></span></p>
+<p><span class='caption-wrapper right'><img class='caption' src='http://ningbit.github.io/images/2013/poc-biketrippr2.png' width='400' height='290' alt='Proof of Concept 2 w/ Nearest Station' title='Proof of Concept 2 w/ Nearest Station'><span class='caption-text'>Proof of Concept 2 w/ Nearest Station</span></span></p>
 
 <p>The proof of concepts were for the most part discarded in the final concept that became BikeWithFriends, but the time spent and knowledge gained through building those two apps gave me a level of confidence about being able to work closely with CitiBike data and creating an interactive user experience. In the meantime, I had signed up for a CitiBike membership and would receive a key by the end of the week.</p>
 
@@ -1277,57 +1115,30 @@ color:red;
 
 <p>Just a day or two after the POCs were done, my team and a few other classmates were at Shake Shack waiting on line for burgers and shakes and through our discussions, we came up with new ideas for creating a better experience for users of our site: We would make CitiBiking into a sort of game, with leaderboards, the possibility of racing from one station to another station, and using CitiBike&rsquo;s trip data to calculate durations of your trips and start and end stations, which would put you on a leaderboard.</p>
 
-<p><img src="/images/2013/bwf-stats.png" alt="BikeWithFriends" /></p>
+<p><img src="http://ningbit.github.io/images/2013/bwf-stats.png" alt="BikeWithFriends" /></p>
 
 <p>That idea quickly blossomed and matured. How about awarding badges for completing different kinds of trips and meeting certain game-like conditions? Badges for number of trips taken, stations visited, for crossing a bridge, or even for biking with someone else?</p>
 
 <p>We realized how cool this concept could be, but would we be able to transform it into code? I spent my Sunday biking around Manhattan and to Williamsburg and Brooklyn to generate some data for our app. BTW, generating data for your app has to be one of my most favorite pastimes. I&rsquo;m learning how much I love good, real seed data as it provides you with a much, much better picture of what your app should be and how it might be used. Biking around the city and across the bridges gave me an idea of getting a badge for crosssing the bridge. Biking along the south tip of Manhattan gave me an idea to award a badge for visiting the stations that give you a view of the Statue of Liberty. Or how about biking on holidays?</p>
 
-<p><img src="/images/2013/bwf-badges.png" alt="BikeWithFriends" /></p>
+<p><img src="http://ningbit.github.io/images/2013/bwf-badges.png" alt="BikeWithFriends" /></p>
 
 <h2>Vision Becomes Reality</h2>
 
 <p>The experience of seeing something come from nothing has been amazing. And to see that passion recognized by being selected as Hack of the Month for the August <a href="http://nytm.org/events/meetup/august-7-2013-nytm">NY Tech Meetup</a> is unbelievably rewarding. We will present on August 7th at NYU Skirball Performing Arts Center for an audience of 1,000+. We&rsquo;re stoked! Look for the follow-up blog post!</p>
 
-<p><img src="/images/2013/bwf-maps.png" alt="BikeWithFriends" /></p>
-</div>
+<p><img src="http://ningbit.github.io/images/2013/bwf-maps.png" alt="BikeWithFriends" /></p>
+]]></content>
+  </entry>
   
-  
+  <entry>
+    <title type="html"><![CDATA[Recipe Book UI: Building a Custom JQuery User Interface]]></title>
+    <link href="http://ningbit.github.io/blog/2013/07/16/jquery-and-javascript/"/>
+    <updated>2013-07-16T23:21:00-04:00</updated>
+    <id>http://ningbit.github.io/blog/2013/07/16/jquery-and-javascript</id>
+    <content type="html"><![CDATA[<p>By Ning Yap (<a href="https://github.com/ningbit">@ningbit</a>)</p>
 
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/07/16/jquery-and-javascript/">Recipe Book UI: Building a Custom JQuery User Interface</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-07-16T23:21:00-04:00" pubdate data-updated="true">Jul 16<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>By Ning Yap (<a href="https://github.com/ningbit">@ningbit</a>)</p>
-
-<p><img src="/images/2013/pantry_ingredients.png" alt="RecipeUI" />
+<p><img src="http://ningbit.github.io/images/2013/pantry_ingredients.png" alt="RecipeUI" />
 Play with the completed UI at <a href="http://recipeui.herokuapp.com/">recipeui.herokuapp.com</a>!</p>
 
 <h2>UI Driven Development</h2>
@@ -1371,7 +1182,7 @@ Play with the completed UI at <a href="http://recipeui.herokuapp.com/">recipeui.
 
 <p><strong>UI Concept:</strong> How about clicking on visual representations of ingredients in the pantry and &ldquo;popping&rdquo; them into the recipe list? Sounds awesome right?</p>
 
-<p><img src="/images/2013/create_recipe2.png" alt="CreateRecipeUI" /></p>
+<p><img src="http://ningbit.github.io/images/2013/create_recipe2.png" alt="CreateRecipeUI" /></p>
 
 <h2>Death To The Dropdown!</h2>
 
@@ -1383,7 +1194,7 @@ Play with the completed UI at <a href="http://recipeui.herokuapp.com/">recipeui.
 
 <h4>Here&rsquo;s what the brute-force code looks like:</h4>
 
-<figure class='code'><figcaption><span>RecipeUI  (recipeui.js.erb)</span> <a href='/downloads/code/recipeui.js.erb'>download</a></figcaption>
+<figure class='code'><figcaption><span>RecipeUI  (recipeui.js.erb)</span> <a href='http://ningbit.github.io/downloads/code/recipeui.js.erb'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -1451,7 +1262,7 @@ Play with the completed UI at <a href="http://recipeui.herokuapp.com/">recipeui.
 
 <p>There are two actions associated with a click. It must hide the pantry item and append to the recipe. If you don&rsquo;t hide the pantry item, recipes could have duplicate items. Use ERb each loops to loop through the entire ingredient list and create a JQuery click action for each. A reset action &ldquo;resets&rdquo; the recipe and refresh the pantry. A submit action writes the finished recipe to the hidden form field on the page.</p>
 
-<figure class='code'><figcaption><span>Hidden Form  (hidden_formfield.html.erb)</span> <a href='/downloads/code/hidden_formfield.html.erb'>download</a></figcaption>
+<figure class='code'><figcaption><span>Hidden Form  (hidden_formfield.html.erb)</span> <a href='http://ningbit.github.io/downloads/code/hidden_formfield.html.erb'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -1469,7 +1280,7 @@ Play with the completed UI at <a href="http://recipeui.herokuapp.com/">recipeui.
 
 <p>Reference each ingredient element by assigning a dynamically generated id in your view HTML ERb</p>
 
-<figure class='code'><figcaption><span>ID Generator  (dynamically_generated_id.html.erb)</span> <a href='/downloads/code/dynamically_generated_id.html.erb'>download</a></figcaption>
+<figure class='code'><figcaption><span>ID Generator  (dynamically_generated_id.html.erb)</span> <a href='http://ningbit.github.io/downloads/code/dynamically_generated_id.html.erb'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -1481,7 +1292,7 @@ Play with the completed UI at <a href="http://recipeui.herokuapp.com/">recipeui.
 
 <p>Pass the render function the js.erb partial and a local variable encapsulating all your ingredients.</p>
 
-<figure class='code'><figcaption><span>Render Partial (render_partial.html.erb)</span> <a href='/downloads/code/render_partial.html.erb'>download</a></figcaption>
+<figure class='code'><figcaption><span>Render Partial (render_partial.html.erb)</span> <a href='http://ningbit.github.io/downloads/code/render_partial.html.erb'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='erb'><span class='line'><span class="cp">&lt;%=</span> <span class="n">render</span> <span class="ss">:partial</span> <span class="o">=&gt;</span> <span class="s1">&#39;jscript&#39;</span><span class="p">,</span> <span class="ss">:formats</span><span class="o">=&gt;[</span><span class="ss">:js</span><span class="o">]</span><span class="p">,</span> <span class="ss">:locals</span> <span class="o">=&gt;</span> <span class="p">{</span><span class="ss">:ingredient_array</span> <span class="o">=&gt;</span> <span class="n">ingredient_array</span><span class="p">}</span><span class="cp">%&gt;</span><span class="x"></span>
 </span></code></pre></td></tr></table></div></figure>
@@ -1502,7 +1313,7 @@ Play with the completed UI at <a href="http://recipeui.herokuapp.com/">recipeui.
 
 <h2>Switch Up. Make a Shopping Cart Text Field!</h2>
 
-<p><img src="/images/2013/ingredient_shopping.png" alt="ShoppingCart" /></p>
+<p><img src="http://ningbit.github.io/images/2013/ingredient_shopping.png" alt="ShoppingCart" /></p>
 
 <p>Same principles here. Clicking add should pop the typed text into the cart. It takes just a few different lines of code. When you
 &ldquo;submit&rdquo; the form (text field) by clicking the &ldquo;add&rdquo; button, it will try to redirect you to a new page. Kill that action by putting this code in the &ldquo;action&rdquo; attribute of the form.</p>
@@ -1512,7 +1323,7 @@ Play with the completed UI at <a href="http://recipeui.herokuapp.com/">recipeui.
 
 <p>Add some simple animation. Make the field shake if the user tries to add badly-formatted items.</p>
 
-<figure class='code'><figcaption><span>Shake Animation  (shake.js.erb)</span> <a href='/downloads/code/shake.js.erb'>download</a></figcaption>
+<figure class='code'><figcaption><span>Shake Animation  (shake.js.erb)</span> <a href='http://ningbit.github.io/downloads/code/shake.js.erb'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -1528,7 +1339,7 @@ Play with the completed UI at <a href="http://recipeui.herokuapp.com/">recipeui.
 
 <p>How about a cool feature to highlight the new items you just bought? Use the .updated_at method and subtract from Time.now.</p>
 
-<figure class='code'><figcaption><span>Highlight Recently Added (recently_added.html.erb)</span> <a href='/downloads/code/recently_added.html.erb'>download</a></figcaption>
+<figure class='code'><figcaption><span>Highlight Recently Added (recently_added.html.erb)</span> <a href='http://ningbit.github.io/downloads/code/recently_added.html.erb'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='erb'><span class='line'><span class="x">&lt;p class=&quot;btn </span><span class="cp">&lt;%=</span> <span class="s2">&quot;btn-primary&quot;</span> <span class="k">if</span> <span class="n">i</span><span class="o">.</span><span class="n">updated_at</span> <span class="o">-</span> <span class="no">Time</span><span class="o">.</span><span class="n">now</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">600</span> <span class="cp">%&gt;</span><span class="x">&quot;&gt;</span>
 </span></code></pre></td></tr></table></div></figure>
@@ -1536,51 +1347,24 @@ Play with the completed UI at <a href="http://recipeui.herokuapp.com/">recipeui.
 
 <p>Make the colors of the buttons refer to their usage!</p>
 
-<p><img src="/images/2013/recipe_buttons.png" alt="RecipeButtons" /></p>
+<p><img src="http://ningbit.github.io/images/2013/recipe_buttons.png" alt="RecipeButtons" /></p>
 
 <p>How about smartly listing the ingredients in the main recipe window? Show the first four ingredients and then append a &ldquo;&hellip;&rdquo; if there are more ingredients. With ERb, the world is your oyster recipe.</p>
 
-<p><img src="/images/2013/recipe-book.png" alt="RecipeBook" /></p>
+<p><img src="http://ningbit.github.io/images/2013/recipe-book.png" alt="RecipeBook" /></p>
 
 <p>Now go generate your own ERb.js UI!</p>
-</div>
+]]></content>
+  </entry>
   
-  
+  <entry>
+    <title type="html"><![CDATA[How to integrate Bootstrap CSS into your Sinatra site, and get more out of your objects using ERB]]></title>
+    <link href="http://ningbit.github.io/blog/2013/06/28/how-to-integrate-bootstrap-css-into-your-sinatra-site/"/>
+    <updated>2013-06-28T07:31:00-04:00</updated>
+    <id>http://ningbit.github.io/blog/2013/06/28/how-to-integrate-bootstrap-css-into-your-sinatra-site</id>
+    <content type="html"><![CDATA[<p>By Ning Yap</p>
 
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/06/28/how-to-integrate-bootstrap-css-into-your-sinatra-site/">How to Integrate Bootstrap CSS Into Your Sinatra Site, and Get More Out of Your Objects Using ERB</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-06-28T07:31:00-04:00" pubdate data-updated="true">Jun 28<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>By Ning Yap</p>
-
-<p><img src="/images/2013/bootstrap.jpg" alt="Bootstrap" /></p>
+<p><img src="http://ningbit.github.io/images/2013/bootstrap.jpg" alt="Bootstrap" /></p>
 
 <blockquote><p>Twitter Bootstrap + Sinatra = Beautiful Routes</p></blockquote>
 
@@ -1588,27 +1372,27 @@ Play with the completed UI at <a href="http://recipeui.herokuapp.com/">recipeui.
 
 <p>Visit <a href="http://twitter.github.io/bootstrap/">Bootstrap</a> and download the zip file. Unzip and copy the <strong>css</strong>, <strong>js</strong> and <strong>img</strong> folders into the &lsquo;<strong>public</strong>&rsquo; folder of your Sinatra site directory.</p>
 
-<p><img src="/images/2013/public-css-js-img.png" alt="public folder" /></p>
+<p><img src="http://ningbit.github.io/images/2013/public-css-js-img.png" alt="public folder" /></p>
 
 <h4>2) Edit Your Template (layout.erb)</h4>
 
 <p>Edit your <strong>layout.erb</strong> to include <strong>bootstrap.css</strong> within the <strong>&lt;head></strong> tags.</p>
 
-<p><img src="/images/2013/css-head.jpg" alt="css head" /></p>
+<p><img src="http://ningbit.github.io/images/2013/css-head.jpg" alt="css head" /></p>
 
 <p><strong>bootstrap.js</strong> goes within your <strong>&lt;body></strong> tags at the end.</p>
 
-<p><img src="/images/2013/js-body.jpg" alt="js body" /></p>
+<p><img src="http://ningbit.github.io/images/2013/js-body.jpg" alt="js body" /></p>
 
 <p>Note the positioning of <strong>&lt;%= yield %></strong> <strong>ERB</strong> tag which will take content from other ERB templates within your <strong>views</strong> directory. The file <strong>layout.erb</strong> is a convention of Sinatra that automatically becomes the default &ldquo;layout&rdquo; template of your site. This can be changed within your routes manually.</p>
 
 <h4>3) Navigation Bar</h4>
 
-<p><img src="/images/2013/bootstrap-navbar.png" alt="bootstrap navbar" /></p>
+<p><img src="http://ningbit.github.io/images/2013/bootstrap-navbar.png" alt="bootstrap navbar" /></p>
 
 <p>Consider your nav bar, which will sit on top of every page that uses your default layout. Bootstrap makes it very easy to create drop down menus and also includes a search bar. Use ERB (each loops) to dynamically generate menu items! For example, in the Genres dropdown menu, the list of genres is dynamically calculated, as is the total number of songs in each category.</p>
 
-<figure class='code'><figcaption><span>Navbar CSS and ERB  (navbar_example.erb)</span> <a href='/downloads/code/navbar_example.erb'>download</a></figcaption>
+<figure class='code'><figcaption><span>Navbar CSS and ERB  (navbar_example.erb)</span> <a href='http://ningbit.github.io/downloads/code/navbar_example.erb'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -1711,14 +1495,14 @@ background-image:url('/img/escheresque_ste.png');
 
 <p>Ooh, look at that &ldquo;escheresque&rdquo; background:</p>
 
-<p><img src="/images/2013/bootstrap-background.jpg" alt="background-example" /></p>
+<p><img src="http://ningbit.github.io/images/2013/bootstrap-background.jpg" alt="background-example" /></p>
 
 <h4>6) Edit the CSS</h4>
 
 <p>Don&rsquo;t be afraid to edit Bootstrap&rsquo;s CSS file to suit your needs. For example, I edited the &ldquo;.btn&rdquo; class to achieve rounder larger buttons to hold artists and songs. Refer to the <a href="http://twitter.github.io/bootstrap/components.html">Components</a> section of the documentation for more tips and examples of included styles.</p>
 
-<p><img src="/images/2013/btn-example.jpg" alt="btn-example" />
-<img src="/images/2013/btn-large.jpg" alt="btn-large" /></p>
+<p><img src="http://ningbit.github.io/images/2013/btn-example.jpg" alt="btn-example" />
+<img src="http://ningbit.github.io/images/2013/btn-large.jpg" alt="btn-large" /></p>
 
 <h4>7) Know Your Grid</h4>
 
@@ -1728,45 +1512,18 @@ background-image:url('/img/escheresque_ste.png');
 
 <p>Achieve flow by having objects point to each other and organize them both visually and logically. Add/drop features are more advanced and are &ldquo;hidden&rdquo; away, drop buttons are given class of danger to highlight destructive nature. Ultimately, dynamic pages/data are more interesting, so if you&rsquo;ve built robust Classes/Objects in your code, pull the data into the page with ERB and make your site feel alive!</p>
 
-<p><img src="/images/2013/bootstrap-dashboard.jpg" alt="bootstrap-dashboard" /></p>
+<p><img src="http://ningbit.github.io/images/2013/bootstrap-dashboard.jpg" alt="bootstrap-dashboard" /></p>
 
 <p>Checkout my <a href="http://github.com/ningbit/playlister-sinatra">repository</a> here to see the results!</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/06/16/quit-playing-games-with-my-ruby-code/">Quit Playing Games With My Ruby Code</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-06-16T23:07:00-04:00" pubdate data-updated="true">Jun 16<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>By Ning Yap <a href="http://www.twitter.com/ningbit">[@ningbit]</a></p>
+  <entry>
+    <title type="html"><![CDATA[Quit Playing Games with My Ruby Code]]></title>
+    <link href="http://ningbit.github.io/blog/2013/06/16/quit-playing-games-with-my-ruby-code/"/>
+    <updated>2013-06-16T23:07:00-04:00</updated>
+    <id>http://ningbit.github.io/blog/2013/06/16/quit-playing-games-with-my-ruby-code</id>
+    <content type="html"><![CDATA[<p>By Ning Yap <a href="http://www.twitter.com/ningbit">[@ningbit]</a></p>
 
 <p><span class='caption-wrapper left'><img class='caption' src='http://upload.wikimedia.org/wikipedia/en/7/7c/Tetris-VeryFirstVersion.png' width='319' height='192' alt='Tetris, c.1986 in a Soviet lab' title='Tetris, c.1986 in a Soviet lab'><span class='caption-text'>Tetris, c.1986 in a Soviet lab</span></span></p>
 
@@ -1787,9 +1544,9 @@ background-image:url('/img/escheresque_ste.png');
 </ul>
 
 
-<p>So my last game I tried to write, see <a href="/blog/2013/06/12/8-bit-git-the-challenges-of-creating-a-git-based-game-part-one/">my last post</a>, was played in the command line, didn&rsquo;t refresh, and had no sprites or fancy graphics. With gosu, I&rsquo;ll be able to take advantage of <strong><em>real-time</em> input</strong> from the player in the form of any keystroke (I&rsquo;m thinking of a cool typing game!). It will be able to <strong>draw</strong> the window and then re-draw (I&rsquo;m thinking of car-crashes and collisions and block-exploding animations). The <strong>Resource Manager</strong> allows for images and sprites (time to pay direct homage to my 8-bit and 16-bit past). The <strong>Game State Manager</strong> allows for win, loss, death, pause conditions (very much like real-life).</p>
+<p>So my last game I tried to write, see <a href="http://ningbit.github.io/blog/2013/06/12/8-bit-git-the-challenges-of-creating-a-git-based-game-part-one/">my last post</a>, was played in the command line, didn&rsquo;t refresh, and had no sprites or fancy graphics. With gosu, I&rsquo;ll be able to take advantage of <strong><em>real-time</em> input</strong> from the player in the form of any keystroke (I&rsquo;m thinking of a cool typing game!). It will be able to <strong>draw</strong> the window and then re-draw (I&rsquo;m thinking of car-crashes and collisions and block-exploding animations). The <strong>Resource Manager</strong> allows for images and sprites (time to pay direct homage to my 8-bit and 16-bit past). The <strong>Game State Manager</strong> allows for win, loss, death, pause conditions (very much like real-life).</p>
 
-<figure class='code'><figcaption><span> (gosu_example.rb)</span> <a href='/downloads/code/gosu_example.rb'>download</a></figcaption>
+<figure class='code'><figcaption><span> (gosu_example.rb)</span> <a href='http://ningbit.github.io/downloads/code/gosu_example.rb'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -1846,44 +1603,17 @@ background-image:url('/img/escheresque_ste.png');
 <h3>Ruby Typing Game?</h3>
 
 <p>Anyway, I recall this game called &ldquo;Mario Teaches Typing&rdquo; from the early 90s &mdash; back when it was possible to not know how to type (Mavis Beacon, anyone?). That game turned out to be pretty garbage, because speed typing to make Mario jump is horribly unsatisfying. But maybe we should take another look? How about a game that teaches basic Ruby syntax. Can writing nested each loops be a fun game play mechanic? I&rsquo;ll have an answer to that question in the next few weeks, hopefully.</p>
-</div>
+]]></content>
+  </entry>
   
-  
+  <entry>
+    <title type="html"><![CDATA[8-Bit Git: the Challenges of Creating a Git-Based Game]]></title>
+    <link href="http://ningbit.github.io/blog/2013/06/12/8-bit-git-the-challenges-of-creating-a-git-based-game/"/>
+    <updated>2013-06-12T20:07:00-04:00</updated>
+    <id>http://ningbit.github.io/blog/2013/06/12/8-bit-git-the-challenges-of-creating-a-git-based-game</id>
+    <content type="html"><![CDATA[<p>By Ning Yap <a href="http://www.twitter.com/ningbit">[@ningbit]</a></p>
 
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/06/12/8-bit-git-the-challenges-of-creating-a-git-based-game/">8-Bit Git: The Challenges of Creating a Git-Based Game</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-06-12T20:07:00-04:00" pubdate data-updated="true">Jun 12<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>By Ning Yap <a href="http://www.twitter.com/ningbit">[@ningbit]</a></p>
-
-<p><img src="/images/2013/Legend_of_Zelda_NES_ScreenShot1.jpg" alt="LOZ NES game" /></p>
+<p><img src="http://ningbit.github.io/images/2013/Legend_of_Zelda_NES_ScreenShot1.jpg" alt="LOZ NES game" /></p>
 
 <blockquote><p>I made some games, but I&rsquo;m pretending like I didn&rsquo;t because they all turned out weird. &mdash; <strong>Shigeru Miyamoto</strong> (creator of The Legend Of Zelda)</p></blockquote>
 
@@ -1919,7 +1649,7 @@ git commit -am "update files"
 
 <p>And to provide instructions to the player, I would have Princess BASHellda leave notes (in .txt format) to guide the player on what to do next.</p>
 
-<p><img src="/images/2013/BASHellda.png" alt="Princess's Note" /></p>
+<p><img src="http://ningbit.github.io/images/2013/BASHellda.png" alt="Princess's Note" /></p>
 
 <h3>Logistics and Building a Story</h3>
 
@@ -1988,129 +1718,12 @@ git branch
 
 <p>on the master branch. Here&rsquo;s what the palace &ldquo;looks like&rdquo; after the player merges from backup.</p>
 
-<p><img src="/images/2013/bit_palace.png" alt="Bit Palace" /></p>
+<p><img src="http://ningbit.github.io/images/2013/bit_palace.png" alt="Bit Palace" /></p>
 
 <h3>Future Ideas</h3>
 
 <p>This is an ongoing project that will improve as I continue to learn and use git. I think I will build out different stages of the game to show the more advanced techniques of git that I don&rsquo;t yet know. Stay tuned!</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
-<aside class="sidebar">
-  
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/2013/09/30/html5-boilerplate-explained-in-simple-terms/">HTML5 Boilerplate Explained in Simple Terms</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/08/20/presenting-bikewithfriends/">Presenting BikeWithFriends at NY Tech Meetup as &#8216;Hack of the Month&#8217;</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/07/30/building-bikewithfriends/">Building BikeWithFriends</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/07/16/jquery-and-javascript/">Recipe Book UI: Building a Custom JQuery User Interface</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/06/28/how-to-integrate-bootstrap-css-into-your-sinatra-site/">How to Integrate Bootstrap CSS Into Your Sinatra Site, and Get More Out of Your Objects Using ERB</a>
-      </li>
-    
-  </ul>
-</section>
-<section>
-  <h1>Twitter</h1>
-    <a class="twitter-timeline" href="https://twitter.com/ningbit" data-widget-id="367720470310711296">Tweets by @ningbit</a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-  <h1>Tweets @ningbit</h1>
-    <a class="twitter-timeline" href="https://twitter.com/search?q=%40ningbit" data-widget-id="370245630251126784">Tweets about @ningbit</a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-</section>
-
-
-<section>
-  <h1>GitHub Repos</h1>
-  <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
-  </ul>
-  
-  <a href="https://github.com/ningbit">@ningbit</a> on GitHub
-  
-  <script type="text/javascript">
-    $(document).ready(function(){
-        if (!window.jXHR){
-            var jxhr = document.createElement('script');
-            jxhr.type = 'text/javascript';
-            jxhr.src = '/javascripts/libs/jXHR.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(jxhr, s);
-        }
-
-        github.showRepos({
-            user: 'ningbit',
-            count: 3,
-            skip_forks: true,
-            target: '#gh_repos'
-        });
-    });
-  </script>
-  <script src="/javascripts/github.js" type="text/javascript"> </script>
-</section>
-
-
-
-
-
-  
-</aside>
-
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2013 - Ning Yap -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
-
-</footer>
-  
-
-
-
-
-
-
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
-
-
-
-
-
-</body>
-</html>
+</feed>

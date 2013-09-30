@@ -1,0 +1,3 @@
+<% @ingredients.each do |i| %>
+  <p class="btn" id="ingredient-<%=i.name.gsub(" ","_")%>"><%=i.name%></p>
+<%end%>

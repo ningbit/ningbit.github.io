@@ -1,0 +1,31 @@
+<script>
+
+  // Adds pantry ingredient to ingredient list
+  <% ingredient_array.each do |i| %>  
+  $("#ingredient-<%=i.gsub(" ","_")%>").click(function(){
+    var htmlstring = $("h4#list").html();
+    var commastring
+    if (htmlstring == ""){commastring = "";}
+      else {commastring = ", ";}
+    $("h4#list").html(htmlstring + commastring + "<%=i%>");
+      $("#ingredient-<%=i.gsub(" ","_")%>").css('display','none');
+    });
+  <%end%>
+
+  // Reset ingredient list and restores pantry
+  $("#reset_ingredients").click(function(){
+    $("h4#list").html("");
+    <% ingredient_array.each do |i| %> 
+      if ($("#ingredient-<%=i.gsub(" ","_")%>").css('display')==='none'){
+        $("#ingredient-<%=i.gsub(" ","_")%>").fadeIn();
+      }
+    <%end%>
+  });
+
+  // Submit finished recipe by writing value into hidden form-field
+  $("#ingredient-submit").click(function(){
+    var completed_list = $("h4#list").html();
+    $("#submitted-list").val(completed_list);
+  });
+
+</script>

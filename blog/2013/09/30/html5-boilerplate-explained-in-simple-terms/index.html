@@ -1,0 +1,1250 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>HTML5 Boilerplate Explained In Simple Terms - Coding is Awesome</title>
+  <meta name="author" content="Ning Yap">
+
+  
+  <meta name="description" content="By Ning Yap Get the latest version of HTML5 Boilerplate and read about Rails integration here What is HTML5 Boilerplate? A template from which one &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://ningbit.github.io/blog/2013/09/30/html5-boilerplate-explained-in-simple-terms">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Coding is Awesome" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <style>
+body > header {
+  background: #222 url('/images/background.jpg');
+}
+
+@media screen and (max-width: 520px){
+ body > header {
+  background: #222 url('/images/background_small.jpg') no-repeat;
+ }
+}
+</style>
+
+<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-43308747-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner">  <style>
+color:red;
+
+</style>
+<hgroup>
+  <h1><a href="/">Coding is Awesome</a></h1>
+  
+    <h2>A Creative Blog for Ningbit</h2>
+  
+</hgroup>
+
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:ningbit.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/about">About</a></li>
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/projects">Projects</a></li>
+  <li><a href="/contact">Contact</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">HTML5 Boilerplate Explained in Simple Terms</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-09-30T19:00:00-04:00" pubdate data-updated="true">Sep 30<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>By Ning Yap</p>
+
+<p><img src="/images/2013/html5-boilerplate.png" alt="HTML5 Boilerplate" />
+<em>Get the <a href="http://html5boilerplate.com/">latest version</a> of HTML5 Boilerplate and read about Rails integration <a href="http://railsapps.github.io/rails-html5-boilerplate.html">here</a></em></p>
+
+<h2>What is HTML5 Boilerplate?</h2>
+
+<p>A template from which one can more easily build a standards-aware website. It is in the words of one of its creators Paul Irish <em>&ldquo;a <strong>good starting template</strong> of <strong>HTML</strong> and <strong>CSS</strong> and a <strong>folder structure</strong> that works&hellip; Baked into it is <strong>years of best practices</strong> from <strong>front-end development professionals</strong>.&rdquo;</em> Since 2010, it&rsquo;s been polished and iterated upon by <a href="https://github.com/h5bp/html5-boilerplate/tree/v4.3.0">hundreds of developers</a>.</p>
+
+<h4>Here&rsquo;s a quick list of features:</h4>
+
+<ul>
+<li>Cross-browser compatibility (Chrome, Firefox, Safari, Opera, IE)</li>
+<li>Legacy browser support back to IE6</li>
+<li>Includes common JavaScript libraries jquery.min.js and modernizr.js</li>
+<li>Includes common CSS library normalize.min.css</li>
+<li>Google Analytics tracking code snippet</li>
+<li>CSS common helper classes, media queries for responsive design</li>
+<li>Customizable! And open-source!</li>
+</ul>
+
+
+<h3>How popular is it?</h3>
+
+<p>A Google search for &ldquo;boilerplate&rdquo; yields <a href="http://html5boilerplate.com/">html5boilerplate.com</a> as the first search result over an actual boiler plate.</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='http://upload.wikimedia.org/wikipedia/commons/e/e5/Bessemer_steel_boiler_plate_stamping.PNG'' width='375' height='375' alt='Actual boiler plate used to make boilers' title='Actual boiler plate used to make boilers'><span class='caption-text'>Actual boiler plate used to make boilers</span></span></p>
+
+<h3>A look at the file/folder structure</h3>
+
+<pre><code>    .
+    ├── css
+    │   ├── main.css
+    │   └── normalize.css
+    ├── doc
+    ├── img
+    ├── js
+    │   ├── main.js
+    │   ├── plugins.js
+    │   └── vendor
+    │       ├── jquery.min.js
+    │       └── modernizr.min.js
+    ├── .htaccess
+    ├── 404.html
+    ├── apple-touch-icon-precomposed.png
+    ├── index.html
+    ├── humans.txt
+    ├── robots.txt
+    ├── crossdomain.xml
+    └── favicon.ico
+</code></pre>
+
+<p>The structure is fairly straighforward, CSS files belong in <strong>css</strong>, documentation belongs in <strong>doc</strong>, image assets in <strong>img</strong>, and JavaScript files in <strong>js</strong>. <strong>main.css</strong> contains boilerplate styles that can be generated via <a href="http://www.initializr.com/">initializr.com</a>, as well as helper classes and media queries.</p>
+
+<p><strong>.htaccess</strong> is the default config file for an Apache web server, <strong>humans.txt</strong> is for listing team members and technologies used, and <strong>robots.txt</strong> is for pages that should be hidden from search engines. <strong>crossdomain.xml</strong> is a template for working with cross-domain requests and <strong>favicon.ico</strong> and the <strong>Apple touch icon</strong> should be replaced with your own so the user sees a customized icon when he or she bookmarks the site.</p>
+
+<p><strong>404.html</strong> is the default &ldquo;Not Found&rdquo; page and <strong>index.html</strong> the default load page.</p>
+
+<h2>Examining index.html</h2>
+
+<blockquote><p>Hello world! This is HTML5 Boilerplate.</p></blockquote>
+
+<div style="max-height:400px;overflow:scroll">
+<figure class='code'><figcaption><span>index.html (index.html)</span> <a href='/downloads/code/index.html'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span><span class='line'><span class="c">&lt;!--[if lt IE 7]&gt;      &lt;html class=&quot;no-js lt-ie9 lt-ie8 lt-ie7&quot;&gt; &lt;![endif]--&gt;</span>
+</span><span class='line'><span class="c">&lt;!--[if IE 7]&gt;         &lt;html class=&quot;no-js lt-ie9 lt-ie8&quot;&gt; &lt;![endif]--&gt;</span>
+</span><span class='line'><span class="c">&lt;!--[if IE 8]&gt;         &lt;html class=&quot;no-js lt-ie9&quot;&gt; &lt;![endif]--&gt;</span>
+</span><span class='line'><span class="c">&lt;!--[if gt IE 8]&gt;&lt;!--&gt;</span> <span class="nt">&lt;html</span> <span class="na">class=</span><span class="s">&quot;no-js&quot;</span><span class="nt">&gt;</span> <span class="c">&lt;!--&lt;![endif]--&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;head&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;utf-8&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;X-UA-Compatible&quot;</span> <span class="na">content=</span><span class="s">&quot;IE=edge&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;title&gt;&lt;/title&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;description&quot;</span> <span class="na">content=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content=</span><span class="s">&quot;width=device-width, initial-scale=1&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="c">&lt;!-- Place favicon.ico and apple-touch-icon.png in the root directory --&gt;</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;css/normalize.css&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;css/main.css&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;js/vendor/modernizr-2.6.2.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/head&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;body&gt;</span>
+</span><span class='line'>        <span class="c">&lt;!--[if lt IE 7]&gt;</span>
+</span><span class='line'><span class="c">            &lt;p class=&quot;browsehappy&quot;&gt;You are using an &lt;strong&gt;outdated&lt;/strong&gt; browser. Please &lt;a href=&quot;http://browsehappy.com/&quot;&gt;upgrade your browser&lt;/a&gt; to improve your experience.&lt;/p&gt;</span>
+</span><span class='line'><span class="c">        &lt;![endif]--&gt;</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="c">&lt;!-- Add your site or application content here --&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;p&gt;</span>Hello world! This is HTML5 Boilerplate.<span class="nt">&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;script&gt;</span><span class="nb">window</span><span class="p">.</span><span class="nx">jQuery</span> <span class="o">||</span> <span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="s1">&#39;&lt;script src=&quot;js/vendor/jquery-1.10.2.min.js&quot;&gt;&lt;\/script&gt;&#39;</span><span class="p">)</span><span class="nt">&lt;/script&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;js/plugins.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;js/main.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="c">&lt;!-- Google Analytics: change UA-XXXXX-X to be your site&#39;s ID. --&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;script&gt;</span>
+</span><span class='line'>            <span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">b</span><span class="p">,</span><span class="nx">o</span><span class="p">,</span><span class="nx">i</span><span class="p">,</span><span class="nx">l</span><span class="p">,</span><span class="nx">e</span><span class="p">,</span><span class="nx">r</span><span class="p">){</span><span class="nx">b</span><span class="p">.</span><span class="nx">GoogleAnalyticsObject</span><span class="o">=</span><span class="nx">l</span><span class="p">;</span><span class="nx">b</span><span class="p">[</span><span class="nx">l</span><span class="p">]</span><span class="o">||</span><span class="p">(</span><span class="nx">b</span><span class="p">[</span><span class="nx">l</span><span class="p">]</span><span class="o">=</span>
+</span><span class='line'>            <span class="kd">function</span><span class="p">(){(</span><span class="nx">b</span><span class="p">[</span><span class="nx">l</span><span class="p">].</span><span class="nx">q</span><span class="o">=</span><span class="nx">b</span><span class="p">[</span><span class="nx">l</span><span class="p">].</span><span class="nx">q</span><span class="o">||</span><span class="p">[]).</span><span class="nx">push</span><span class="p">(</span><span class="nx">arguments</span><span class="p">)});</span><span class="nx">b</span><span class="p">[</span><span class="nx">l</span><span class="p">].</span><span class="nx">l</span><span class="o">=+</span><span class="k">new</span> <span class="nb">Date</span><span class="p">;</span>
+</span><span class='line'>            <span class="nx">e</span><span class="o">=</span><span class="nx">o</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span><span class="nx">r</span><span class="o">=</span><span class="nx">o</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="nx">i</span><span class="p">)[</span><span class="mi">0</span><span class="p">];</span>
+</span><span class='line'>            <span class="nx">e</span><span class="p">.</span><span class="nx">src</span><span class="o">=</span><span class="s1">&#39;//www.google-analytics.com/analytics.js&#39;</span><span class="p">;</span>
+</span><span class='line'>            <span class="nx">r</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">insertBefore</span><span class="p">(</span><span class="nx">e</span><span class="p">,</span><span class="nx">r</span><span class="p">)}(</span><span class="nb">window</span><span class="p">,</span><span class="nb">document</span><span class="p">,</span><span class="s1">&#39;script&#39;</span><span class="p">,</span><span class="s1">&#39;ga&#39;</span><span class="p">));</span>
+</span><span class='line'>            <span class="nx">ga</span><span class="p">(</span><span class="s1">&#39;create&#39;</span><span class="p">,</span><span class="s1">&#39;UA-XXXXX-X&#39;</span><span class="p">);</span><span class="nx">ga</span><span class="p">(</span><span class="s1">&#39;send&#39;</span><span class="p">,</span><span class="s1">&#39;pageview&#39;</span><span class="p">);</span>
+</span><span class='line'>        <span class="nt">&lt;/script&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+</div>
+
+
+<p><span style='display:block;text-align:center'> &mdash;&mdash;&mdash; </span></p>
+
+<br />
+
+
+<p class="code-p">We have our simplified HTML5 doctype declaration:</p>
+
+
+<pre><code>&lt;!DOCTYPE html&gt;
+</code></pre>
+
+<p class="code-p"><a href="http://www.quirksmode.org/css/condcom.html">Conditional commenting</a> only evaluat-able by Internet Explorer browsers. This allows for specifying CSS fixes for specific legacy versions of IE. The &#8220;.no-js&#8221; class can be used to specify custom styles when JavaScript is disabled.</p>
+
+
+<pre><code>&lt;!--[if lt IE 7]&gt;      &lt;html class="no-js lt-ie9 lt-ie8 lt-ie7"&gt; &lt;![endif]--&gt;
+&lt;!--[if IE 7]&gt;         &lt;html class="no-js lt-ie9 lt-ie8"&gt; &lt;![endif]--&gt;
+&lt;!--[if IE 8]&gt;         &lt;html class="no-js lt-ie9"&gt; &lt;![endif]--&gt;
+&lt;!--[if gt IE 8]&gt;&lt;!--&gt; &lt;html class="no-js"&gt; &lt;!--&lt;![endif]--&gt;
+</code></pre>
+
+<p class="code-p">Apparently, if the charset isn&#8217;t declared within the first <a href="https://code.google.com/p/doctype-mirror/wiki/ArticleUtf7">512 bytes</a> of your HTML document, your site is vulnerable to <a href="https://code.google.com/p/doctype-mirror/wiki/ArticleXSS">malicious code and hijacking!</a></p>
+
+
+<pre><code>&lt;meta charset="utf-8"&gt;
+</code></pre>
+
+<p class="code-p">Another IE fix to ensure the latest rendering engine version of IE (Internet Exploder) is being used</p>
+
+
+<pre><code>&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+</code></pre>
+
+<p class="code-p">If you are <strong>NOT</strong> <a href="http://blog.javierusobiaga.com/stop-using-the-viewport-tag-until-you-know-ho">coding a responsive site, or site for mobile, take this line out</a>. It&#8217;s basically a message to the mobile browser that says, &#8220;Render me differently, I&#8217;m designed for mobile screens too!&#8221;</p>
+
+
+<pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+</code></pre>
+
+<p class="code-p">Keep those styles in line with <a href="http://necolas.github.io/normalize.css/">normalize.css</a>!
+<em>&#8220;Normalize.css makes browsers render all elements more consistently and in line with modern standards. It precisely targets only the styles that need normalizing.&#8221;</em> How fascist.</p>
+
+
+<pre><code>&lt;link rel="stylesheet" href="css/normalize.css"&gt;
+</code></pre>
+
+<p class="code-p">Why is this script loaded at the top (rather than the bottom) of the page, possibly <a href="http://elegantcode.com/2010/03/30/your-javascript-goes-where/">causing the whole page to hang</a> if your servers are slow? That&#8217;s because this JavaScript library, <a href="http://modernizr.com/">Modernizr</a>, helps older browsers handle HTML5 elements; therefore, it must load before any HTML5-specific code can be read.</p>
+
+
+<pre><code>&lt;script src="js/vendor/modernizr-2.6.2.min.js"&gt;&lt;/script&gt;
+</code></pre>
+
+<br />
+
+
+<h3>Examining index.html: &lt;body> edition</h3>
+
+<p class="code-p">Kindly inform your site visitor that their choice of browser is antiquated and they have <a href="http://i2.kym-cdn.com/photos/images/original/000/268/827/fe8.jpg">no taste in technology</a></p>
+
+
+<pre><code>&lt;!--[if lt IE 7]&gt;
+  &lt;p class="browsehappy"&gt;You are using an &lt;strong&gt;outdated&lt;/strong&gt; browser. 
+  Please &lt;a href="http://browsehappy.com/"&gt;upgrade your browser&lt;/a&gt; 
+  to improve your experience.&lt;/p&gt;
+&lt;![endif]--&gt;
+</code></pre>
+
+<p class="code-p">Content is king.</p>
+
+
+<pre><code>&lt;!-- Add your site or application content here --&gt;
+&lt;p&gt;Hello world! This is HTML5 Boilerplate.&lt;/p&gt;
+</code></pre>
+
+<p class="code-p">Bow down to almighty Google, sourcer of jQuery. Actually, you should use Google CDN (Content Delivery Network) because the visitor&#8217;s browser will likely have a cached version of jQuery from their site&#8230; and Google&#8217;s servers are probably way faster than yours anyway. So yes, bow down to Lord Google.</p>
+
+
+<pre><code>&lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;window.jQuery || document.write('&lt;script src="js/vendor/jquery-1.10.2.min.js"&gt;&lt;\/script&gt;')&lt;/script&gt;
+&lt;script src="js/plugins.js"&gt;&lt;/script&gt;
+&lt;script src="js/main.js"&gt;&lt;/script&gt;
+</code></pre>
+
+<p class="code-p">The <a href="http://upload.wikimedia.org/wikipedia/en/9/98/Barad_d%C3%BBr_(LoTR_film).jpg">ever watchful eye</a></p>
+
+
+<pre><code>&lt;!-- Google Analytics: change UA-XXXXX-X to be your site's ID. --&gt;
+&lt;script&gt;
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X');ga('send','pageview');
+&lt;/script&gt;
+</code></pre>
+
+<br />
+
+
+<h2>Abbreviated CSS rundown</h2>
+
+<div style="max-height:300px;overflow:scroll">
+  <figure class='code'><figcaption><span>main.css (main.css)</span> <a href='/downloads/code/main.css'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+<span class='line-number'>82</span>
+<span class='line-number'>83</span>
+<span class='line-number'>84</span>
+<span class='line-number'>85</span>
+<span class='line-number'>86</span>
+<span class='line-number'>87</span>
+<span class='line-number'>88</span>
+<span class='line-number'>89</span>
+<span class='line-number'>90</span>
+<span class='line-number'>91</span>
+<span class='line-number'>92</span>
+<span class='line-number'>93</span>
+<span class='line-number'>94</span>
+<span class='line-number'>95</span>
+<span class='line-number'>96</span>
+<span class='line-number'>97</span>
+<span class='line-number'>98</span>
+<span class='line-number'>99</span>
+<span class='line-number'>100</span>
+<span class='line-number'>101</span>
+<span class='line-number'>102</span>
+<span class='line-number'>103</span>
+<span class='line-number'>104</span>
+<span class='line-number'>105</span>
+<span class='line-number'>106</span>
+<span class='line-number'>107</span>
+<span class='line-number'>108</span>
+<span class='line-number'>109</span>
+<span class='line-number'>110</span>
+<span class='line-number'>111</span>
+<span class='line-number'>112</span>
+<span class='line-number'>113</span>
+<span class='line-number'>114</span>
+<span class='line-number'>115</span>
+<span class='line-number'>116</span>
+<span class='line-number'>117</span>
+<span class='line-number'>118</span>
+<span class='line-number'>119</span>
+<span class='line-number'>120</span>
+<span class='line-number'>121</span>
+<span class='line-number'>122</span>
+<span class='line-number'>123</span>
+<span class='line-number'>124</span>
+<span class='line-number'>125</span>
+<span class='line-number'>126</span>
+<span class='line-number'>127</span>
+<span class='line-number'>128</span>
+<span class='line-number'>129</span>
+<span class='line-number'>130</span>
+<span class='line-number'>131</span>
+<span class='line-number'>132</span>
+<span class='line-number'>133</span>
+<span class='line-number'>134</span>
+<span class='line-number'>135</span>
+<span class='line-number'>136</span>
+<span class='line-number'>137</span>
+<span class='line-number'>138</span>
+<span class='line-number'>139</span>
+<span class='line-number'>140</span>
+<span class='line-number'>141</span>
+<span class='line-number'>142</span>
+<span class='line-number'>143</span>
+<span class='line-number'>144</span>
+<span class='line-number'>145</span>
+<span class='line-number'>146</span>
+<span class='line-number'>147</span>
+<span class='line-number'>148</span>
+<span class='line-number'>149</span>
+<span class='line-number'>150</span>
+<span class='line-number'>151</span>
+<span class='line-number'>152</span>
+<span class='line-number'>153</span>
+<span class='line-number'>154</span>
+<span class='line-number'>155</span>
+<span class='line-number'>156</span>
+<span class='line-number'>157</span>
+<span class='line-number'>158</span>
+<span class='line-number'>159</span>
+<span class='line-number'>160</span>
+<span class='line-number'>161</span>
+<span class='line-number'>162</span>
+<span class='line-number'>163</span>
+<span class='line-number'>164</span>
+<span class='line-number'>165</span>
+<span class='line-number'>166</span>
+<span class='line-number'>167</span>
+<span class='line-number'>168</span>
+<span class='line-number'>169</span>
+<span class='line-number'>170</span>
+<span class='line-number'>171</span>
+<span class='line-number'>172</span>
+<span class='line-number'>173</span>
+<span class='line-number'>174</span>
+<span class='line-number'>175</span>
+<span class='line-number'>176</span>
+<span class='line-number'>177</span>
+<span class='line-number'>178</span>
+<span class='line-number'>179</span>
+<span class='line-number'>180</span>
+<span class='line-number'>181</span>
+<span class='line-number'>182</span>
+<span class='line-number'>183</span>
+<span class='line-number'>184</span>
+<span class='line-number'>185</span>
+<span class='line-number'>186</span>
+<span class='line-number'>187</span>
+<span class='line-number'>188</span>
+<span class='line-number'>189</span>
+<span class='line-number'>190</span>
+<span class='line-number'>191</span>
+<span class='line-number'>192</span>
+<span class='line-number'>193</span>
+<span class='line-number'>194</span>
+<span class='line-number'>195</span>
+<span class='line-number'>196</span>
+<span class='line-number'>197</span>
+<span class='line-number'>198</span>
+<span class='line-number'>199</span>
+<span class='line-number'>200</span>
+<span class='line-number'>201</span>
+<span class='line-number'>202</span>
+<span class='line-number'>203</span>
+<span class='line-number'>204</span>
+<span class='line-number'>205</span>
+<span class='line-number'>206</span>
+<span class='line-number'>207</span>
+<span class='line-number'>208</span>
+<span class='line-number'>209</span>
+<span class='line-number'>210</span>
+<span class='line-number'>211</span>
+<span class='line-number'>212</span>
+<span class='line-number'>213</span>
+<span class='line-number'>214</span>
+<span class='line-number'>215</span>
+<span class='line-number'>216</span>
+<span class='line-number'>217</span>
+<span class='line-number'>218</span>
+<span class='line-number'>219</span>
+<span class='line-number'>220</span>
+<span class='line-number'>221</span>
+<span class='line-number'>222</span>
+<span class='line-number'>223</span>
+<span class='line-number'>224</span>
+<span class='line-number'>225</span>
+<span class='line-number'>226</span>
+<span class='line-number'>227</span>
+<span class='line-number'>228</span>
+<span class='line-number'>229</span>
+<span class='line-number'>230</span>
+<span class='line-number'>231</span>
+<span class='line-number'>232</span>
+<span class='line-number'>233</span>
+<span class='line-number'>234</span>
+<span class='line-number'>235</span>
+<span class='line-number'>236</span>
+<span class='line-number'>237</span>
+<span class='line-number'>238</span>
+<span class='line-number'>239</span>
+<span class='line-number'>240</span>
+<span class='line-number'>241</span>
+<span class='line-number'>242</span>
+<span class='line-number'>243</span>
+<span class='line-number'>244</span>
+<span class='line-number'>245</span>
+<span class='line-number'>246</span>
+<span class='line-number'>247</span>
+<span class='line-number'>248</span>
+<span class='line-number'>249</span>
+<span class='line-number'>250</span>
+<span class='line-number'>251</span>
+<span class='line-number'>252</span>
+<span class='line-number'>253</span>
+<span class='line-number'>254</span>
+<span class='line-number'>255</span>
+<span class='line-number'>256</span>
+<span class='line-number'>257</span>
+<span class='line-number'>258</span>
+<span class='line-number'>259</span>
+<span class='line-number'>260</span>
+<span class='line-number'>261</span>
+<span class='line-number'>262</span>
+<span class='line-number'>263</span>
+<span class='line-number'>264</span>
+<span class='line-number'>265</span>
+<span class='line-number'>266</span>
+<span class='line-number'>267</span>
+<span class='line-number'>268</span>
+<span class='line-number'>269</span>
+<span class='line-number'>270</span>
+<span class='line-number'>271</span>
+<span class='line-number'>272</span>
+<span class='line-number'>273</span>
+<span class='line-number'>274</span>
+<span class='line-number'>275</span>
+<span class='line-number'>276</span>
+<span class='line-number'>277</span>
+<span class='line-number'>278</span>
+<span class='line-number'>279</span>
+<span class='line-number'>280</span>
+<span class='line-number'>281</span>
+<span class='line-number'>282</span>
+<span class='line-number'>283</span>
+<span class='line-number'>284</span>
+<span class='line-number'>285</span>
+<span class='line-number'>286</span>
+<span class='line-number'>287</span>
+<span class='line-number'>288</span>
+<span class='line-number'>289</span>
+<span class='line-number'>290</span>
+<span class='line-number'>291</span>
+<span class='line-number'>292</span>
+<span class='line-number'>293</span>
+<span class='line-number'>294</span>
+<span class='line-number'>295</span>
+<span class='line-number'>296</span>
+<span class='line-number'>297</span>
+<span class='line-number'>298</span>
+<span class='line-number'>299</span>
+<span class='line-number'>300</span>
+<span class='line-number'>301</span>
+<span class='line-number'>302</span>
+<span class='line-number'>303</span>
+<span class='line-number'>304</span>
+</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="c">/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */</span>
+</span><span class='line'>
+</span><span class='line'><span class="c">/*</span>
+</span><span class='line'><span class="c"> * What follows is the result of much research on cross-browser styling.</span>
+</span><span class='line'><span class="c"> * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,</span>
+</span><span class='line'><span class="c"> * Kroc Camen, and the H5BP dev community and team.</span>
+</span><span class='line'><span class="c"> */</span>
+</span><span class='line'>
+</span><span class='line'><span class="c">/* ==========================================================================</span>
+</span><span class='line'><span class="c">   Base styles: opinionated defaults</span>
+</span><span class='line'><span class="c">   ========================================================================== */</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">html</span><span class="o">,</span>
+</span><span class='line'><span class="nt">button</span><span class="o">,</span>
+</span><span class='line'><span class="nt">input</span><span class="o">,</span>
+</span><span class='line'><span class="nt">select</span><span class="o">,</span>
+</span><span class='line'><span class="nt">textarea</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">color</span><span class="o">:</span> <span class="m">#222</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">html</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">font-size</span><span class="o">:</span> <span class="m">1em</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">line-height</span><span class="o">:</span> <span class="m">1</span><span class="o">.</span><span class="m">4</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c">/*</span>
+</span><span class='line'><span class="c"> * Remove text-shadow in selection highlight: h5bp.com/i</span>
+</span><span class='line'><span class="c"> * These selection rule sets have to be separate.</span>
+</span><span class='line'><span class="c"> * Customize the background color to match your design.</span>
+</span><span class='line'><span class="c"> */</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">:</span><span class="nd">:-moz-selection</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">background</span><span class="o">:</span> <span class="m">#b3d4fc</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">text-shadow</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">:</span><span class="nd">:selection</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">background</span><span class="o">:</span> <span class="m">#b3d4fc</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">text-shadow</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c">/*</span>
+</span><span class='line'><span class="c"> * A better looking default horizontal rule</span>
+</span><span class='line'><span class="c"> */</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">hr</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">height</span><span class="o">:</span> <span class="m">1px</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">border</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">border-top</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#ccc</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">margin</span><span class="o">:</span> <span class="m">1em</span> <span class="m">0</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c">/*</span>
+</span><span class='line'><span class="c"> * Remove the gap between images, videos, audio and canvas and the bottom of</span>
+</span><span class='line'><span class="c"> * their containers: h5bp.com/i/440</span>
+</span><span class='line'><span class="c"> */</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">audio</span><span class="o">,</span>
+</span><span class='line'><span class="nt">canvas</span><span class="o">,</span>
+</span><span class='line'><span class="nt">img</span><span class="o">,</span>
+</span><span class='line'><span class="nt">video</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">vertical-align</span><span class="o">:</span> <span class="k">middle</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c">/*</span>
+</span><span class='line'><span class="c"> * Remove default fieldset styles.</span>
+</span><span class='line'><span class="c"> */</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">fieldset</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">border</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c">/*</span>
+</span><span class='line'><span class="c"> * Allow only vertical resizing of textareas.</span>
+</span><span class='line'><span class="c"> */</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">textarea</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">resize</span><span class="o">:</span> <span class="n">vertical</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c">/* ==========================================================================</span>
+</span><span class='line'><span class="c">   Browse Happy prompt</span>
+</span><span class='line'><span class="c">   ========================================================================== */</span>
+</span><span class='line'>
+</span><span class='line'><span class="nc">.browsehappy</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">margin</span><span class="o">:</span> <span class="m">0.2em</span> <span class="m">0</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">background</span><span class="o">:</span> <span class="m">#ccc</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">color</span><span class="o">:</span> <span class="m">#000</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">padding</span><span class="o">:</span> <span class="m">0.2em</span> <span class="m">0</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c">/* ==========================================================================</span>
+</span><span class='line'><span class="c">   Author&#39;s custom styles</span>
+</span><span class='line'><span class="c">   ========================================================================== */</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="c">/* ==========================================================================</span>
+</span><span class='line'><span class="c">   Helper classes</span>
+</span><span class='line'><span class="c">   ========================================================================== */</span>
+</span><span class='line'>
+</span><span class='line'><span class="c">/*</span>
+</span><span class='line'><span class="c"> * Image replacement</span>
+</span><span class='line'><span class="c"> */</span>
+</span><span class='line'>
+</span><span class='line'><span class="nc">.ir</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">background-color</span><span class="o">:</span> <span class="k">transparent</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">border</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">overflow</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span>
+</span><span class='line'>    <span class="c">/* IE 6/7 fallback */</span>
+</span><span class='line'>    <span class="o">*</span><span class="k">text-indent</span><span class="o">:</span> <span class="m">-9999px</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nc">.ir</span><span class="nd">:before</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">content</span><span class="o">:</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">width</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">height</span><span class="o">:</span> <span class="m">150</span><span class="o">%</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c">/*</span>
+</span><span class='line'><span class="c"> * Hide from both screenreaders and browsers: h5bp.com/u</span>
+</span><span class='line'><span class="c"> */</span>
+</span><span class='line'>
+</span><span class='line'><span class="nc">.hidden</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">display</span><span class="o">:</span> <span class="k">none</span> <span class="cp">!important</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">visibility</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c">/*</span>
+</span><span class='line'><span class="c"> * Hide only visually, but have it available for screenreaders: h5bp.com/v</span>
+</span><span class='line'><span class="c"> */</span>
+</span><span class='line'>
+</span><span class='line'><span class="nc">.visuallyhidden</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">border</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">clip</span><span class="o">:</span> <span class="n">rect</span><span class="p">(</span><span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span><span class="p">);</span>
+</span><span class='line'>    <span class="k">height</span><span class="o">:</span> <span class="m">1px</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">margin</span><span class="o">:</span> <span class="m">-1px</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">overflow</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">width</span><span class="o">:</span> <span class="m">1px</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c">/*</span>
+</span><span class='line'><span class="c"> * Extends the .visuallyhidden class to allow the element to be focusable</span>
+</span><span class='line'><span class="c"> * when navigated to via the keyboard: h5bp.com/p</span>
+</span><span class='line'><span class="c"> */</span>
+</span><span class='line'>
+</span><span class='line'><span class="nc">.visuallyhidden.focusable</span><span class="nd">:active</span><span class="o">,</span>
+</span><span class='line'><span class="nc">.visuallyhidden.focusable</span><span class="nd">:focus</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">clip</span><span class="o">:</span> <span class="k">auto</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">height</span><span class="o">:</span> <span class="k">auto</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">overflow</span><span class="o">:</span> <span class="k">visible</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">position</span><span class="o">:</span> <span class="k">static</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">width</span><span class="o">:</span> <span class="k">auto</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c">/*</span>
+</span><span class='line'><span class="c"> * Hide visually and from screenreaders, but maintain layout</span>
+</span><span class='line'><span class="c"> */</span>
+</span><span class='line'>
+</span><span class='line'><span class="nc">.invisible</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">visibility</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c">/*</span>
+</span><span class='line'><span class="c"> * Clearfix: contain floats</span>
+</span><span class='line'><span class="c"> *</span>
+</span><span class='line'><span class="c"> * For modern browsers</span>
+</span><span class='line'><span class="c"> * 1. The space content is one way to avoid an Opera bug when the</span>
+</span><span class='line'><span class="c"> *    `contenteditable` attribute is included anywhere else in the document.</span>
+</span><span class='line'><span class="c"> *    Otherwise it causes space to appear at the top and bottom of elements</span>
+</span><span class='line'><span class="c"> *    that receive the `clearfix` class.</span>
+</span><span class='line'><span class="c"> * 2. The use of `table` rather than `block` is only necessary if using</span>
+</span><span class='line'><span class="c"> *    `:before` to contain the top-margins of child elements.</span>
+</span><span class='line'><span class="c"> */</span>
+</span><span class='line'>
+</span><span class='line'><span class="nc">.clearfix</span><span class="nd">:before</span><span class="o">,</span>
+</span><span class='line'><span class="nc">.clearfix</span><span class="nd">:after</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">content</span><span class="o">:</span> <span class="s2">&quot; &quot;</span><span class="p">;</span> <span class="c">/* 1 */</span>
+</span><span class='line'>    <span class="k">display</span><span class="o">:</span> <span class="n">table</span><span class="p">;</span> <span class="c">/* 2 */</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nc">.clearfix</span><span class="nd">:after</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">clear</span><span class="o">:</span> <span class="k">both</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c">/*</span>
+</span><span class='line'><span class="c"> * For IE 6/7 only</span>
+</span><span class='line'><span class="c"> * Include this rule to trigger hasLayout and contain floats.</span>
+</span><span class='line'><span class="c"> */</span>
+</span><span class='line'>
+</span><span class='line'><span class="nc">.clearfix</span> <span class="p">{</span>
+</span><span class='line'>    <span class="o">*</span><span class="n">zoom</span><span class="o">:</span> <span class="m">1</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c">/* ==========================================================================</span>
+</span><span class='line'><span class="c">   EXAMPLE Media Queries for Responsive Design.</span>
+</span><span class='line'><span class="c">   These examples override the primary (&#39;mobile first&#39;) styles.</span>
+</span><span class='line'><span class="c">   Modify as content requires.</span>
+</span><span class='line'><span class="c">   ========================================================================== */</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">@media</span> <span class="nt">only</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">35em</span><span class="o">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="c">/* Style adjustments for viewports that meet the condition */</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">@media</span> <span class="nt">print</span><span class="o">,</span>
+</span><span class='line'>       <span class="o">(</span><span class="nt">-o-min-device-pixel-ratio</span><span class="o">:</span> <span class="nt">5</span><span class="o">/</span><span class="nt">4</span><span class="o">),</span>
+</span><span class='line'>       <span class="o">(</span><span class="nt">-webkit-min-device-pixel-ratio</span><span class="o">:</span> <span class="nt">1</span><span class="nc">.25</span><span class="o">),</span>
+</span><span class='line'>       <span class="o">(</span><span class="nt">min-resolution</span><span class="o">:</span> <span class="nt">120dpi</span><span class="o">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="c">/* Style adjustments for high resolution devices */</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c">/* ==========================================================================</span>
+</span><span class='line'><span class="c">   Print styles.</span>
+</span><span class='line'><span class="c">   Inlined to avoid required HTTP connection: h5bp.com/r</span>
+</span><span class='line'><span class="c">   ========================================================================== */</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">@media</span> <span class="nt">print</span> <span class="p">{</span>
+</span><span class='line'>    <span class="o">*</span> <span class="p">{</span>
+</span><span class='line'>        <span class="k">background</span><span class="o">:</span> <span class="k">transparent</span> <span class="cp">!important</span><span class="p">;</span>
+</span><span class='line'>        <span class="k">color</span><span class="o">:</span> <span class="m">#000</span> <span class="cp">!important</span><span class="p">;</span> <span class="c">/* Black prints faster: h5bp.com/s */</span>
+</span><span class='line'>        <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="k">none</span> <span class="cp">!important</span><span class="p">;</span>
+</span><span class='line'>        <span class="k">text-shadow</span><span class="o">:</span> <span class="k">none</span> <span class="cp">!important</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="nt">a</span><span class="o">,</span>
+</span><span class='line'>    <span class="nt">a</span><span class="nd">:visited</span> <span class="p">{</span>
+</span><span class='line'>        <span class="k">text-decoration</span><span class="o">:</span> <span class="k">underline</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="o">]</span><span class="nd">:after</span> <span class="p">{</span>
+</span><span class='line'>        <span class="k">content</span><span class="o">:</span> <span class="s2">&quot; (&quot;</span> <span class="n">attr</span><span class="p">(</span><span class="n">href</span><span class="p">)</span> <span class="s2">&quot;)&quot;</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="nt">abbr</span><span class="o">[</span><span class="nt">title</span><span class="o">]</span><span class="nd">:after</span> <span class="p">{</span>
+</span><span class='line'>        <span class="k">content</span><span class="o">:</span> <span class="s2">&quot; (&quot;</span> <span class="n">attr</span><span class="p">(</span><span class="n">title</span><span class="p">)</span> <span class="s2">&quot;)&quot;</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c">/*</span>
+</span><span class='line'><span class="c">     * Don&#39;t show links for images, or javascript/internal links</span>
+</span><span class='line'><span class="c">     */</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="nc">.ir</span> <span class="nt">a</span><span class="nd">:after</span><span class="o">,</span>
+</span><span class='line'>    <span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="o">^=</span><span class="s2">&quot;javascript:&quot;</span><span class="o">]</span><span class="nd">:after</span><span class="o">,</span>
+</span><span class='line'>    <span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="o">^=</span><span class="s2">&quot;#&quot;</span><span class="o">]</span><span class="nd">:after</span> <span class="p">{</span>
+</span><span class='line'>        <span class="k">content</span><span class="o">:</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="nt">pre</span><span class="o">,</span>
+</span><span class='line'>    <span class="nt">blockquote</span> <span class="p">{</span>
+</span><span class='line'>        <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#999</span><span class="p">;</span>
+</span><span class='line'>        <span class="k">page</span><span class="o">-</span><span class="n">break</span><span class="o">-</span><span class="k">inside</span><span class="o">:</span> <span class="k">avoid</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="nt">thead</span> <span class="p">{</span>
+</span><span class='line'>        <span class="k">display</span><span class="o">:</span> <span class="k">table-header-group</span><span class="p">;</span> <span class="c">/* h5bp.com/t */</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="nt">tr</span><span class="o">,</span>
+</span><span class='line'>    <span class="nt">img</span> <span class="p">{</span>
+</span><span class='line'>        <span class="k">page</span><span class="o">-</span><span class="n">break</span><span class="o">-</span><span class="k">inside</span><span class="o">:</span> <span class="k">avoid</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="nt">img</span> <span class="p">{</span>
+</span><span class='line'>        <span class="k">max-width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span> <span class="cp">!important</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">@page</span> <span class="p">{</span>
+</span><span class='line'>        <span class="nt">margin</span><span class="o">:</span> <span class="nt">0</span><span class="nc">.5cm</span><span class="o">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="nt">p</span><span class="o">,</span>
+</span><span class='line'>    <span class="nt">h2</span><span class="o">,</span>
+</span><span class='line'>    <span class="nt">h3</span> <span class="p">{</span>
+</span><span class='line'>        <span class="k">orphans</span><span class="o">:</span> <span class="m">3</span><span class="p">;</span>
+</span><span class='line'>        <span class="k">widows</span><span class="o">:</span> <span class="m">3</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="nt">h2</span><span class="o">,</span>
+</span><span class='line'>    <span class="nt">h3</span> <span class="p">{</span>
+</span><span class='line'>        <span class="k">page</span><span class="o">-</span><span class="n">break</span><span class="o">-</span><span class="n">after</span><span class="o">:</span> <span class="k">avoid</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+</div>
+
+
+<br />
+
+
+<p><span style='display:block;text-align:center'> &mdash;&mdash;&mdash; </span></p>
+
+<br />
+
+
+<p><span class='caption-wrapper'><img class='caption' src='/images/2013/clearfix.jpg'' width='450' height='450' alt='' title=''><span class='caption-text'></span></span></p>
+
+<p class="code-p">Friends don&#8217;t let friends float divs non-clearfixed.</p>
+
+
+<pre><code>.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}    
+</code></pre>
+
+<p class="code-p">What are print styles? <a href="http://coding.smashingmagazine.com/2011/11/24/how-to-set-up-a-print-style-sheet/">Print styles</a> are styles for &#8220;printing&#8221;, which means the transfer of ink to &#8220;paper&#8221;. Paper is a dried, flat-sheet made from the fibrous pulp of wood, a material that hit its peak popularity at the end of the 20th century. Who prints webpages, seriously? Get a tablet, people!</p>
+
+
+<pre><code>@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+</code></pre>
+
+<p class="code-p">My, what a large, shiny screen you have there! You can come over and query my media anytime&#8230;</p>
+
+
+<pre><code>@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+</code></pre>
+
+<p>Apologies for that last one.</p>
+
+<h2>A case against using HTML5 Boilerplate</h2>
+
+<p><span class='caption-wrapper'><img class='caption' src='http://www.paulirish.com/wp-content/uploads/2010/08/html5boilerplate_ss.png'' width='' height='' alt='HTML5 Boilerplate ca. 2010' title='HTML5 Boilerplate ca. 2010'><span class='caption-text'>HTML5 Boilerplate ca. 2010</span></span></p>
+
+<p>Will <a href="http://csswizardry.com/2011/01/the-real-html5-boilerplate/">the real HTML5 boilerplate</a> please stand up? This guy, Harry Roberts, is into minimalism and questioning assumptions, which is always good. He considers the original to be bloatware, basically.</p>
+
+<p><strong>THIS IS SPARTA!!!!</strong>&rsquo;s version of HTML5 Boilerplate</p>
+
+<figure class='code'><figcaption><span>index.html (the_real_html5_boilerplate.html)</span> <a href='/downloads/code/the_real_html5_boilerplate.html'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span><span class='line'><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;head&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;utf-8&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;title&gt;</span>HTML5 boilerplate – all you really need…<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;css/style.css&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>    <span class="c">&lt;!--[if IE]&gt;</span>
+</span><span class='line'><span class="c">        &lt;script src=&quot;http://html5shiv.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;</span>
+</span><span class='line'><span class="c">    &lt;![endif]--&gt;</span>
+</span><span class='line'><span class="nt">&lt;/head&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;body</span> <span class="na">id=</span><span class="s">&quot;home&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="nt">&lt;h1&gt;</span>HTML5 boilerplate<span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Would have resulted in a much shorter blog post from me. Ah well&hellip;</p>
+
+<h2>Summary</h2>
+
+<p>Now you know why HTML5 Boilerplate exists. It is a beacon of hope in this <a href="http://dev.opera.com/articles/view/unobtrusive-javascript/">hostile world</a> of way too many options for browsing. At least with the boilerplate, you have a few crowd-sourced signposts pointing the way.</p>
+
+<p>I must say, front-end development has really come a long way since the good ol&#8217; GeoCities days. So tell me, when will people stop <a href="http://thumbnails.visually.netdna-cdn.com/web-designer-vs-web-developer_502919932c2d2_w594.jpg">confusing the roles of <strong>web designer</strong> and <strong>web developer</strong></a>?</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='http://cdn.arstechnica.net/2009/04/24/geocities1.png'' width='480' height='480' alt='The Good Ol' Days, Bless 'er Heart' title='The Good Ol' Days, Bless 'er Heart'><span class='caption-text'>The Good Ol&#8217; Days, Bless &lsquo;er Heart</span></span></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Ning Yap</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-09-30T19:00:00-04:00" pubdate data-updated="true">Sep 30<span>th</span>, 2013</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ningbit.github.io/blog/2013/09/30/html5-boilerplate-explained-in-simple-terms/" data-via="ningbit" data-counturl="http://ningbit.github.io/blog/2013/09/30/html5-boilerplate-explained-in-simple-terms/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/08/20/presenting-bikewithfriends/" title="Previous Post: Presenting BikeWithFriends at NY Tech Meetup as 'Hack of the Month'">&laquo; Presenting BikeWithFriends at NY Tech Meetup as 'Hack of the Month'</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/09/30/html5-boilerplate-explained-in-simple-terms/">HTML5 Boilerplate Explained in Simple Terms</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/08/20/presenting-bikewithfriends/">Presenting BikeWithFriends at NY Tech Meetup as 'Hack of the Month'</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/07/30/building-bikewithfriends/">Building BikeWithFriends</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/07/16/jquery-and-javascript/">Recipe Book UI: Building a Custom JQuery User Interface</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/28/how-to-integrate-bootstrap-css-into-your-sinatra-site/">How to Integrate Bootstrap CSS Into Your Sinatra Site, and Get More Out of Your Objects Using ERB</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h1>Twitter</h1>
+    <a class="twitter-timeline" href="https://twitter.com/ningbit" data-widget-id="367720470310711296">Tweets by @ningbit</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+  <h1>Tweets @ningbit</h1>
+    <a class="twitter-timeline" href="https://twitter.com/search?q=%40ningbit" data-widget-id="370245630251126784">Tweets about @ningbit</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+</section>
+
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/ningbit">@ningbit</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'ningbit',
+            count: 3,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Ning Yap -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,502 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Recipe Book UI: Building a Custom JQuery User Interface - Coding is Awesome</title>
+  <meta name="author" content="Ning Yap">
+
+  
+  <meta name="description" content="By Ning Yap (@ningbit) Play with the completed UI at recipeui.herokuapp.com! UI Driven Development The battle between front-end and back-end &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://ningbit.github.io/blog/2013/07/16/jquery-and-javascript">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Coding is Awesome" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <style>
+body > header {
+  background: #222 url('/images/background.jpg');
+}
+
+@media screen and (max-width: 520px){
+ body > header {
+  background: #222 url('/images/background_small.jpg') no-repeat;
+ }
+}
+</style>
+
+<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-43308747-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner">  <style>
+color:red;
+
+</style>
+<hgroup>
+  <h1><a href="/">Coding is Awesome</a></h1>
+  
+    <h2>A Creative Blog for Ningbit</h2>
+  
+</hgroup>
+
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:ningbit.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/about">About</a></li>
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/projects">Projects</a></li>
+  <li><a href="/contact">Contact</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Recipe Book UI: Building a Custom JQuery User Interface</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-16T23:21:00-04:00" pubdate data-updated="true">Jul 16<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>By Ning Yap (<a href="https://github.com/ningbit">@ningbit</a>)</p>
+
+<p><img src="/images/2013/pantry_ingredients.png" alt="RecipeUI" />
+Play with the completed UI at <a href="http://recipeui.herokuapp.com/">recipeui.herokuapp.com</a>!</p>
+
+<h2>UI Driven Development</h2>
+
+<p>The battle between front-end and back-end continues to be waged. But who cares about that? Let&rsquo;s make a beautiful UI because it makes us happy!</p>
+
+<h2>Relevant JQuery Code:</h2>
+
+<pre><code>$("[HTML element])
+</code></pre>
+
+<p>selects the element, by element id being quite common and efficient.</p>
+
+<pre><code>.click()
+</code></pre>
+
+<p>captures a click event.</p>
+
+<pre><code>.html()
+</code></pre>
+
+<p>will write HTML code into your page directly.</p>
+
+<pre><code>.css("display","none")
+</code></pre>
+
+<p>hides an element by adding the CSS display property.</p>
+
+<pre><code>.fadeIn()
+</code></pre>
+
+<p>fades in your element.</p>
+
+<p>Also, let&rsquo;s use FlatUI, a Boostrap-wrapped theme. Download <a href="http://designmodo.github.io/Flat-UI/">here</a>!</p>
+
+<h2>Origin of The Pantry</h2>
+
+<p>So in class at the <a href="http://flatironschool.com/">Flatiron School</a>, we were asked to create a Rails app that  mimicked the relationship between recipes and ingredients. But, we were not to instantiate new ingredients per recipe. Recipes would share Ingredient objects, only creating new instances if they didn&rsquo;t already exist. Hence, the idea of a &ldquo;pantry&rdquo;:</p>
+
+<p><strong>Idea:</strong> <em>The pantry contains all ingredients available to the chef to create her recipe. If she doesn&rsquo;t have the ingredients handy, she must go shopping at the local marketplace.</em></p>
+
+<p><strong>UI Concept:</strong> How about clicking on visual representations of ingredients in the pantry and &ldquo;popping&rdquo; them into the recipe list? Sounds awesome right?</p>
+
+<p><img src="/images/2013/create_recipe2.png" alt="CreateRecipeUI" /></p>
+
+<h2>Death To The Dropdown!</h2>
+
+<blockquote><p>My golden rule for dropdown menus is don&rsquo;t use them. They suck. Especially if you have more than 10 elements. -Me</p></blockquote>
+
+<h2>How to Achieve The Desired UI and Experience Nirvana</h2>
+
+<p>First, suffer deeply through the difficulty of implementing a fun UI interface via a JavaScriptERB partial from scratch. Just kidding! It&rsquo;ll be much better for you since you can just borrow my template. :)</p>
+
+<h4>Here&rsquo;s what the brute-force code looks like:</h4>
+
+<figure class='code'><figcaption><span>RecipeUI  (recipeui.js.erb)</span> <a href='/downloads/code/recipeui.js.erb'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c1">// Adds pantry ingredient to ingredient list</span>
+</span><span class='line'>  <span class="o">&lt;%</span> <span class="nx">ingredient_array</span><span class="p">.</span><span class="nx">each</span> <span class="k">do</span> <span class="o">|</span><span class="nx">i</span><span class="o">|</span> <span class="o">%&gt;</span>
+</span><span class='line'>  <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#ingredient-&lt;%=i.gsub(&quot;</span> <span class="s2">&quot;,&quot;</span><span class="nx">_</span><span class="s2">&quot;)%&gt;&quot;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">htmlstring</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;h4#list&quot;</span><span class="p">).</span><span class="nx">html</span><span class="p">();</span>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">commastring</span>
+</span><span class='line'>    <span class="k">if</span> <span class="p">(</span><span class="nx">htmlstring</span> <span class="o">==</span> <span class="s2">&quot;&quot;</span><span class="p">){</span><span class="nx">commastring</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;}</span>
+</span><span class='line'>      <span class="k">else</span> <span class="p">{</span><span class="nx">commastring</span> <span class="o">=</span> <span class="s2">&quot;, &quot;</span><span class="p">;}</span>
+</span><span class='line'>    <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;h4#list&quot;</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="nx">htmlstring</span> <span class="o">+</span> <span class="nx">commastring</span> <span class="o">+</span> <span class="s2">&quot;&lt;%=i%&gt;&quot;</span><span class="p">);</span>
+</span><span class='line'>      <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#ingredient-&lt;%=i.gsub(&quot;</span> <span class="s2">&quot;,&quot;</span><span class="nx">_</span><span class="s2">&quot;)%&gt;&quot;</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">&#39;display&#39;</span><span class="p">,</span><span class="s1">&#39;none&#39;</span><span class="p">);</span>
+</span><span class='line'>    <span class="p">});</span>
+</span><span class='line'>  <span class="o">&lt;%</span><span class="nx">end</span><span class="o">%&gt;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c1">// Reset ingredient list and restores pantry</span>
+</span><span class='line'>  <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#reset_ingredients&quot;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+</span><span class='line'>    <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;h4#list&quot;</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">);</span>
+</span><span class='line'>    <span class="o">&lt;%</span> <span class="nx">ingredient_array</span><span class="p">.</span><span class="nx">each</span> <span class="k">do</span> <span class="o">|</span><span class="nx">i</span><span class="o">|</span> <span class="o">%&gt;</span>
+</span><span class='line'>      <span class="k">if</span> <span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#ingredient-&lt;%=i.gsub(&quot;</span> <span class="s2">&quot;,&quot;</span><span class="nx">_</span><span class="s2">&quot;)%&gt;&quot;</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">&#39;display&#39;</span><span class="p">)</span><span class="o">===</span><span class="s1">&#39;none&#39;</span><span class="p">){</span>
+</span><span class='line'>        <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#ingredient-&lt;%=i.gsub(&quot;</span> <span class="s2">&quot;,&quot;</span><span class="nx">_</span><span class="s2">&quot;)%&gt;&quot;</span><span class="p">).</span><span class="nx">fadeIn</span><span class="p">();</span>
+</span><span class='line'>      <span class="p">}</span>
+</span><span class='line'>    <span class="o">&lt;%</span><span class="nx">end</span><span class="o">%&gt;</span>
+</span><span class='line'>  <span class="p">});</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c1">// Submit finished recipe by writing value into hidden form-field</span>
+</span><span class='line'>  <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#ingredient-submit&quot;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">completed_list</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;h4#list&quot;</span><span class="p">).</span><span class="nx">html</span><span class="p">();</span>
+</span><span class='line'>    <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#submitted-list&quot;</span><span class="p">).</span><span class="nx">val</span><span class="p">(</span><span class="nx">completed_list</span><span class="p">);</span>
+</span><span class='line'>  <span class="p">});</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="err">/script&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>There are two actions associated with a click. It must hide the pantry item and append to the recipe. If you don&rsquo;t hide the pantry item, recipes could have duplicate items. Use ERb each loops to loop through the entire ingredient list and create a JQuery click action for each. A reset action &ldquo;resets&rdquo; the recipe and refresh the pantry. A submit action writes the finished recipe to the hidden form field on the page.</p>
+
+<figure class='code'><figcaption><span>Hidden Form  (hidden_formfield.html.erb)</span> <a href='/downloads/code/hidden_formfield.html.erb'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">&quot;&lt;%= recipes_path %&gt;&quot;</span> <span class="na">method=</span><span class="s">&quot;POST&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;submitted-list&quot;</span> <span class="na">type=</span><span class="s">&quot;hidden&quot;</span> <span class="na">name=</span><span class="s">&quot;ingredients_list&quot;</span> <span class="na">value=</span><span class="s">&quot;&quot;</span><span class="nt">/&gt;</span>
+</span><span class='line'>.
+</span><span class='line'>.
+</span><span class='line'>.
+</span><span class='line'><span class="nt">&lt;/form&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Reference each ingredient element by assigning a dynamically generated id in your view HTML ERb</p>
+
+<figure class='code'><figcaption><span>ID Generator  (dynamically_generated_id.html.erb)</span> <a href='/downloads/code/dynamically_generated_id.html.erb'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="o">&lt;%</span> <span class="err">@</span><span class="nx">ingredients</span><span class="p">.</span><span class="nx">each</span> <span class="k">do</span> <span class="o">|</span><span class="nx">i</span><span class="o">|</span> <span class="o">%&gt;</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="nx">p</span> <span class="kr">class</span><span class="o">=</span><span class="s2">&quot;btn&quot;</span> <span class="nx">id</span><span class="o">=</span><span class="s2">&quot;ingredient-&lt;%=i.name.gsub(&quot;</span> <span class="s2">&quot;,&quot;</span><span class="nx">_</span><span class="s2">&quot;)%&gt;&quot;</span><span class="o">&gt;&lt;%=</span><span class="nx">i</span><span class="p">.</span><span class="nx">name</span><span class="o">%&gt;&lt;</span><span class="err">/p&gt;</span>
+</span><span class='line'><span class="o">&lt;%</span><span class="nx">end</span><span class="o">%&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Pass the render function the js.erb partial and a local variable encapsulating all your ingredients.</p>
+
+<figure class='code'><figcaption><span>Render Partial (render_partial.html.erb)</span> <a href='/downloads/code/render_partial.html.erb'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='erb'><span class='line'><span class="cp">&lt;%=</span> <span class="n">render</span> <span class="ss">:partial</span> <span class="o">=&gt;</span> <span class="s1">&#39;jscript&#39;</span><span class="p">,</span> <span class="ss">:formats</span><span class="o">=&gt;[</span><span class="ss">:js</span><span class="o">]</span><span class="p">,</span> <span class="ss">:locals</span> <span class="o">=&gt;</span> <span class="p">{</span><span class="ss">:ingredient_array</span> <span class="o">=&gt;</span> <span class="n">ingredient_array</span><span class="p">}</span><span class="cp">%&gt;</span><span class="x"></span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And it&rsquo;s just that simple!</p>
+
+<h2>Recycle Your Code (still keepin&#8217; it DRY)</h2>
+
+<ul>
+<li>Make the necessary adjustments to your Edit view, i.e. hide the elements that are already in the recipe.</li>
+<li>Add a minor twist and make a garbage disposal! :)</li>
+<li>Give it some flair by hiding the disposal until the user tries to dispose. Fade out if the user changes his mind and cancels.</li>
+</ul>
+
+
+<p>Check out the <a href="https://github.com/ningbit/recipes-lab">repo</a> for how-to.</p>
+
+<h2>Switch Up. Make a Shopping Cart Text Field!</h2>
+
+<p><img src="/images/2013/ingredient_shopping.png" alt="ShoppingCart" /></p>
+
+<p>Same principles here. Clicking add should pop the typed text into the cart. It takes just a few different lines of code. When you
+&ldquo;submit&rdquo; the form (text field) by clicking the &ldquo;add&rdquo; button, it will try to redirect you to a new page. Kill that action by putting this code in the &ldquo;action&rdquo; attribute of the form.</p>
+
+<pre><code>&lt;form action="javascript:void(0);"&gt;
+</code></pre>
+
+<p>Add some simple animation. Make the field shake if the user tries to add badly-formatted items.</p>
+
+<figure class='code'><figcaption><span>Shake Animation  (shake.js.erb)</span> <a href='/downloads/code/shake.js.erb'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="k">if</span> <span class="p">(</span><span class="sr">/^[a-zA-Z -]*$/</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nx">newitem</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="nx">newitem</span> <span class="o">!==</span> <span class="s2">&quot;&quot;</span><span class="p">){</span>
+</span><span class='line'>  <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;h4#list&quot;</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="nx">htmlstring</span> <span class="o">+</span> <span class="nx">commastring</span> <span class="o">+</span> <span class="nx">newitem</span><span class="p">);</span>
+</span><span class='line'>  <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#cart-item&quot;</span><span class="p">).</span><span class="nx">val</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">);}</span>
+</span><span class='line'><span class="k">else</span> <span class="p">{</span><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#shop-cart&quot;</span><span class="p">).</span><span class="nx">effect</span><span class="p">(</span><span class="s2">&quot;shake&quot;</span><span class="p">);}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Polish that UI</h2>
+
+<p>How about a cool feature to highlight the new items you just bought? Use the .updated_at method and subtract from Time.now.</p>
+
+<figure class='code'><figcaption><span>Highlight Recently Added (recently_added.html.erb)</span> <a href='/downloads/code/recently_added.html.erb'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='erb'><span class='line'><span class="x">&lt;p class=&quot;btn </span><span class="cp">&lt;%=</span> <span class="s2">&quot;btn-primary&quot;</span> <span class="k">if</span> <span class="n">i</span><span class="o">.</span><span class="n">updated_at</span> <span class="o">-</span> <span class="no">Time</span><span class="o">.</span><span class="n">now</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">600</span> <span class="cp">%&gt;</span><span class="x">&quot;&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Make the colors of the buttons refer to their usage!</p>
+
+<p><img src="/images/2013/recipe_buttons.png" alt="RecipeButtons" /></p>
+
+<p>How about smartly listing the ingredients in the main recipe window? Show the first four ingredients and then append a &ldquo;&hellip;&rdquo; if there are more ingredients. With ERb, the world is your oyster recipe.</p>
+
+<p><img src="/images/2013/recipe-book.png" alt="RecipeBook" /></p>
+
+<p>Now go generate your own ERb.js UI!</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Ning Yap</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-16T23:21:00-04:00" pubdate data-updated="true">Jul 16<span>th</span>, 2013</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ningbit.github.io/blog/2013/07/16/jquery-and-javascript/" data-via="ningbit" data-counturl="http://ningbit.github.io/blog/2013/07/16/jquery-and-javascript/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/06/28/how-to-integrate-bootstrap-css-into-your-sinatra-site/" title="Previous Post: How to integrate Bootstrap CSS into your Sinatra site, and get more out of your objects using ERB">&laquo; How to integrate Bootstrap CSS into your Sinatra site, and get more out of your objects using ERB</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/07/30/building-bikewithfriends/" title="Next Post: Building BikeWithFriends">Building BikeWithFriends &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/09/30/html5-boilerplate-explained-in-simple-terms/">HTML5 Boilerplate Explained in Simple Terms</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/08/20/presenting-bikewithfriends/">Presenting BikeWithFriends at NY Tech Meetup as 'Hack of the Month'</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/07/30/building-bikewithfriends/">Building BikeWithFriends</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/07/16/jquery-and-javascript/">Recipe Book UI: Building a Custom JQuery User Interface</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/28/how-to-integrate-bootstrap-css-into-your-sinatra-site/">How to Integrate Bootstrap CSS Into Your Sinatra Site, and Get More Out of Your Objects Using ERB</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h1>Twitter</h1>
+    <a class="twitter-timeline" href="https://twitter.com/ningbit" data-widget-id="367720470310711296">Tweets by @ningbit</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+  <h1>Tweets @ningbit</h1>
+    <a class="twitter-timeline" href="https://twitter.com/search?q=%40ningbit" data-widget-id="370245630251126784">Tweets about @ningbit</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+</section>
+
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/ningbit">@ningbit</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'ningbit',
+            count: 3,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Ning Yap -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,325 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Building BikeWithFriends - Coding is Awesome</title>
+  <meta name="author" content="Ning Yap">
+
+  
+  <meta name="description" content="By Ning Yap I feel like I just gave birth to something. I feel drained, but at least the app is out there in the world now, living and breathing on &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://ningbit.github.io/blog/2013/07/30/building-bikewithfriends">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Coding is Awesome" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <style>
+body > header {
+  background: #222 url('/images/background.jpg');
+}
+
+@media screen and (max-width: 520px){
+ body > header {
+  background: #222 url('/images/background_small.jpg') no-repeat;
+ }
+}
+</style>
+
+<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-43308747-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner">  <style>
+color:red;
+
+</style>
+<hgroup>
+  <h1><a href="/">Coding is Awesome</a></h1>
+  
+    <h2>A Creative Blog for Ningbit</h2>
+  
+</hgroup>
+
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:ningbit.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/about">About</a></li>
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/projects">Projects</a></li>
+  <li><a href="/contact">Contact</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Building BikeWithFriends</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-30T23:26:00-04:00" pubdate data-updated="true">Jul 30<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>By Ning Yap</p>
+
+<p><img src="/images/2013/bwf-login.png" alt="BikeWithFriends" /></p>
+
+<blockquote><p>I feel like I just gave birth to something. I feel drained, but at least the app is out there in the world now, living and breathing on it&rsquo;s own… (sort of)</p></blockquote>
+
+<h2>Multiple Starts</h2>
+
+<p>The genesis of the app was really more an area of focus than anything specific. After completing Ashley William&rsquo;s <a href="https://github.com/ashleygwilliams/student-citibike">CitiBike excercise</a> for class at <a href="http://flatironschool.com">The Flatiron School</a>, I really wanted to play more with CitiBike JSON data and maps. I discussed with my group my hope to create some rough <strong>proof of concepts</strong> about ideas we could turn into projects.</p>
+
+<p><span class='caption-wrapper left'><img class='caption' src='/images/2013/poc-maps.png' width='' height='' alt='Proof of Concept w/ Bike Route' title='Proof of Concept w/ Bike Route'><span class='caption-text'>Proof of Concept w/ Bike Route</span></span></p>
+
+<p>I turned to my old, trusted friend Google to research what was already out there. There were a good amount of sites visualizing macro data regarding available bikes at all the stations, which was pretty cool, but I knew early on it wasn&rsquo;t worth trying to replicate that sort of implementation. The available bikes/docks data is available to everyone, and I saw multiple sites using that data in the same ways.</p>
+
+<p>Originally I wanted to make an app that could text/email you if your &ldquo;home&rdquo; CitiBike station as out of bikes. It would also allow you to see the viability of a commute based on collected data about your start and end stations and a specified time of departure. It became apparent this would be a data intensive task, though doable.</p>
+
+<p>Another focus for me was playing with map features as I think having a visual component to interact with is always fun and adds interest. The first POC involved getting bike directions to show up between two selected stations. The second POC gave you the ability to type in any address and it would show you the closest bike station to you.</p>
+
+<p><span class='caption-wrapper right'><img class='caption' src='/images/2013/poc-biketrippr.png' width='400' height='280' alt='Proof of Concept 2 w/ Address Search' title='Proof of Concept 2 w/ Address Search'><span class='caption-text'>Proof of Concept 2 w/ Address Search</span></span></p>
+
+<p><span class='caption-wrapper right'><img class='caption' src='/images/2013/poc-biketrippr2.png' width='400' height='290' alt='Proof of Concept 2 w/ Nearest Station' title='Proof of Concept 2 w/ Nearest Station'><span class='caption-text'>Proof of Concept 2 w/ Nearest Station</span></span></p>
+
+<p>The proof of concepts were for the most part discarded in the final concept that became BikeWithFriends, but the time spent and knowledge gained through building those two apps gave me a level of confidence about being able to work closely with CitiBike data and creating an interactive user experience. In the meantime, I had signed up for a CitiBike membership and would receive a key by the end of the week.</p>
+
+<h2>Major Pivot and Breakthrough</h2>
+
+<p>Just a day or two after the POCs were done, my team and a few other classmates were at Shake Shack waiting on line for burgers and shakes and through our discussions, we came up with new ideas for creating a better experience for users of our site: We would make CitiBiking into a sort of game, with leaderboards, the possibility of racing from one station to another station, and using CitiBike&rsquo;s trip data to calculate durations of your trips and start and end stations, which would put you on a leaderboard.</p>
+
+<p><img src="/images/2013/bwf-stats.png" alt="BikeWithFriends" /></p>
+
+<p>That idea quickly blossomed and matured. How about awarding badges for completing different kinds of trips and meeting certain game-like conditions? Badges for number of trips taken, stations visited, for crossing a bridge, or even for biking with someone else?</p>
+
+<p>We realized how cool this concept could be, but would we be able to transform it into code? I spent my Sunday biking around Manhattan and to Williamsburg and Brooklyn to generate some data for our app. BTW, generating data for your app has to be one of my most favorite pastimes. I&rsquo;m learning how much I love good, real seed data as it provides you with a much, much better picture of what your app should be and how it might be used. Biking around the city and across the bridges gave me an idea of getting a badge for crosssing the bridge. Biking along the south tip of Manhattan gave me an idea to award a badge for visiting the stations that give you a view of the Statue of Liberty. Or how about biking on holidays?</p>
+
+<p><img src="/images/2013/bwf-badges.png" alt="BikeWithFriends" /></p>
+
+<h2>Vision Becomes Reality</h2>
+
+<p>The experience of seeing something come from nothing has been amazing. And to see that passion recognized by being selected as Hack of the Month for the August <a href="http://nytm.org/events/meetup/august-7-2013-nytm">NY Tech Meetup</a> is unbelievably rewarding. We will present on August 7th at NYU Skirball Performing Arts Center for an audience of 1,000+. We&rsquo;re stoked! Look for the follow-up blog post!</p>
+
+<p><img src="/images/2013/bwf-maps.png" alt="BikeWithFriends" /></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Ning Yap</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-30T23:26:00-04:00" pubdate data-updated="true">Jul 30<span>th</span>, 2013</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ningbit.github.io/blog/2013/07/30/building-bikewithfriends/" data-via="ningbit" data-counturl="http://ningbit.github.io/blog/2013/07/30/building-bikewithfriends/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/07/16/jquery-and-javascript/" title="Previous Post: Recipe Book UI: Building a Custom JQuery User Interface">&laquo; Recipe Book UI: Building a Custom JQuery User Interface</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/08/20/presenting-bikewithfriends/" title="Next Post: Presenting BikeWithFriends at NY Tech Meetup as 'Hack of the Month'">Presenting BikeWithFriends at NY Tech Meetup as 'Hack of the Month' &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/09/30/html5-boilerplate-explained-in-simple-terms/">HTML5 Boilerplate Explained in Simple Terms</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/08/20/presenting-bikewithfriends/">Presenting BikeWithFriends at NY Tech Meetup as 'Hack of the Month'</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/07/30/building-bikewithfriends/">Building BikeWithFriends</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/07/16/jquery-and-javascript/">Recipe Book UI: Building a Custom JQuery User Interface</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/28/how-to-integrate-bootstrap-css-into-your-sinatra-site/">How to Integrate Bootstrap CSS Into Your Sinatra Site, and Get More Out of Your Objects Using ERB</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h1>Twitter</h1>
+    <a class="twitter-timeline" href="https://twitter.com/ningbit" data-widget-id="367720470310711296">Tweets by @ningbit</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+  <h1>Tweets @ningbit</h1>
+    <a class="twitter-timeline" href="https://twitter.com/search?q=%40ningbit" data-widget-id="370245630251126784">Tweets about @ningbit</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+</section>
+
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/ningbit">@ningbit</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'ningbit',
+            count: 3,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Ning Yap -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

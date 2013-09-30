@@ -1,0 +1,364 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Quit Playing Games with My Ruby Code - Coding is Awesome</title>
+  <meta name="author" content="Ning Yap">
+
+  
+  <meta name="description" content="By Ning Yap [@ningbit] Tetris, c.1986 in a Soviet lab I don&rsquo;t mean to pigeonhole myself and this blog into being all about game development and &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://ningbit.github.io/blog/2013/06/16/quit-playing-games-with-my-ruby-code">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Coding is Awesome" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <style>
+body > header {
+  background: #222 url('/images/background.jpg');
+}
+
+@media screen and (max-width: 520px){
+ body > header {
+  background: #222 url('/images/background_small.jpg') no-repeat;
+ }
+}
+</style>
+
+<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-43308747-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner">  <style>
+color:red;
+
+</style>
+<hgroup>
+  <h1><a href="/">Coding is Awesome</a></h1>
+  
+    <h2>A Creative Blog for Ningbit</h2>
+  
+</hgroup>
+
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:ningbit.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/about">About</a></li>
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/projects">Projects</a></li>
+  <li><a href="/contact">Contact</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Quit Playing Games With My Ruby Code</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-16T23:07:00-04:00" pubdate data-updated="true">Jun 16<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>By Ning Yap <a href="http://www.twitter.com/ningbit">[@ningbit]</a></p>
+
+<p><span class='caption-wrapper left'><img class='caption' src='http://upload.wikimedia.org/wikipedia/en/7/7c/Tetris-VeryFirstVersion.png' width='319' height='192' alt='Tetris, c.1986 in a Soviet lab' title='Tetris, c.1986 in a Soviet lab'><span class='caption-text'>Tetris, c.1986 in a Soviet lab</span></span></p>
+
+<p>I don&rsquo;t mean to pigeonhole myself and this blog into being all about game development and game design (as my first two posts would seem to indicate), but it is what my beginner mind is gravitating towards, mainly out of curiosity. Maybe because I don&rsquo;t get to play games anymore and consider them a poor investment of my time these days. But programming games… That&rsquo;s cerebral and smart! <em>*ahem</em></p>
+
+<p>So perousing speakerdeck.com for a class assignment alerted me to the fact that I&rsquo;m not alone at all. See <a href="https://speakerdeck.com/sausheong/playing-with-ruby" title="Playing with Ruby">here</a> and <a href="https://speakerdeck.com/cadwallion/game-development-and-ruby" title="Game Development and Ruby">here</a>. There are a good number of people interested in utilizing Ruby for game development. And where there is interest &mdash; I&rsquo;m learning &mdash; there are <em>always</em> gems! The one I&rsquo;ll be focusing on (and also using) is called <strong>&lsquo;Gosu&rsquo;</strong>.</p>
+
+<pre><code>gem install gosu
+</code></pre>
+
+<p>So there&rsquo;s a good amount of documentation about <strong>gosu</strong> on their site <a href="http://www.libgosu.org/">http://www.libgosu.org/</a>, much of which I&rsquo;m sure I&rsquo;ll understand better once I try to implement it. But I&rsquo;ll summarize what gosu is here</p>
+
+<ul>
+<li>It&rsquo;s a 2D game development library</li>
+<li>It&rsquo;s C++ based, with a Ruby wrapper</li>
+<li>Finished game will run on OSX, Linux and Windows platforms</li>
+<li>OpenGL is used for rendering</li>
+</ul>
+
+
+<p>So my last game I tried to write, see <a href="/blog/2013/06/12/8-bit-git-the-challenges-of-creating-a-git-based-game-part-one/">my last post</a>, was played in the command line, didn&rsquo;t refresh, and had no sprites or fancy graphics. With gosu, I&rsquo;ll be able to take advantage of <strong><em>real-time</em> input</strong> from the player in the form of any keystroke (I&rsquo;m thinking of a cool typing game!). It will be able to <strong>draw</strong> the window and then re-draw (I&rsquo;m thinking of car-crashes and collisions and block-exploding animations). The <strong>Resource Manager</strong> allows for images and sprites (time to pay direct homage to my 8-bit and 16-bit past). The <strong>Game State Manager</strong> allows for win, loss, death, pause conditions (very much like real-life).</p>
+
+<figure class='code'><figcaption><span> (gosu_example.rb)</span> <a href='/downloads/code/gosu_example.rb'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'>    <span class="nb">require</span> <span class="s1">&#39;gosu&#39;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">class</span> <span class="nc">GameWindow</span> <span class="o">&lt;</span> <span class="ss">Gosu</span><span class="p">:</span><span class="ss">:Window</span>
+</span><span class='line'>      <span class="k">def</span> <span class="nf">initialize</span>
+</span><span class='line'>        <span class="k">super</span> <span class="mi">640</span><span class="p">,</span> <span class="mi">480</span><span class="p">,</span> <span class="kp">false</span>
+</span><span class='line'>        <span class="nb">self</span><span class="o">.</span><span class="n">caption</span> <span class="o">=</span> <span class="s2">&quot;Gosu Tutorial Game&quot;</span>
+</span><span class='line'>      <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>      <span class="k">def</span> <span class="nf">update</span>
+</span><span class='line'>        <span class="c1"># game logic goes here</span>
+</span><span class='line'>      <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>      <span class="k">def</span> <span class="nf">draw</span>
+</span><span class='line'>        <span class="c1"># render logic goes here</span>
+</span><span class='line'>      <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>      <span class="k">def</span> <span class="nf">button_down</span> <span class="n">button_id</span>
+</span><span class='line'>        <span class="c1"># called when button is pressed</span>
+</span><span class='line'>      <span class="k">end</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">window</span> <span class="o">=</span> <span class="no">GameWindow</span><span class="o">.</span><span class="n">new</span>
+</span><span class='line'>    <span class="n">window</span><span class="o">.</span><span class="n">show</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Not only that, there is even an option for adding sound, which is probably the icing on the cake, since I didn&rsquo;t tell you this, but I actually studied music/sound production in college.</p>
+
+<p><span class='caption-wrapper right'><img class='caption' src='http://www.myabandonware.com/media/captures/M/mario-teaches-typing/mario-teaches-typing_1.gif' width='400' height='260' alt='Mario Teaches Typing' title='Mario Teaches Typing'><span class='caption-text'>Mario Teaches Typing</span></span></p>
+
+<h3>Ruby Typing Game?</h3>
+
+<p>Anyway, I recall this game called &ldquo;Mario Teaches Typing&rdquo; from the early 90s &mdash; back when it was possible to not know how to type (Mavis Beacon, anyone?). That game turned out to be pretty garbage, because speed typing to make Mario jump is horribly unsatisfying. But maybe we should take another look? How about a game that teaches basic Ruby syntax. Can writing nested each loops be a fun game play mechanic? I&rsquo;ll have an answer to that question in the next few weeks, hopefully.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Ning Yap</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-16T23:07:00-04:00" pubdate data-updated="true">Jun 16<span>th</span>, 2013</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ningbit.github.io/blog/2013/06/16/quit-playing-games-with-my-ruby-code/" data-via="ningbit" data-counturl="http://ningbit.github.io/blog/2013/06/16/quit-playing-games-with-my-ruby-code/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/06/12/8-bit-git-the-challenges-of-creating-a-git-based-game/" title="Previous Post: 8-Bit Git: the Challenges of Creating a Git-Based Game">&laquo; 8-Bit Git: the Challenges of Creating a Git-Based Game</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/06/28/how-to-integrate-bootstrap-css-into-your-sinatra-site/" title="Next Post: How to integrate Bootstrap CSS into your Sinatra site, and get more out of your objects using ERB">How to integrate Bootstrap CSS into your Sinatra site, and get more out of your objects using ERB &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/09/30/html5-boilerplate-explained-in-simple-terms/">HTML5 Boilerplate Explained in Simple Terms</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/08/20/presenting-bikewithfriends/">Presenting BikeWithFriends at NY Tech Meetup as 'Hack of the Month'</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/07/30/building-bikewithfriends/">Building BikeWithFriends</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/07/16/jquery-and-javascript/">Recipe Book UI: Building a Custom JQuery User Interface</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/28/how-to-integrate-bootstrap-css-into-your-sinatra-site/">How to Integrate Bootstrap CSS Into Your Sinatra Site, and Get More Out of Your Objects Using ERB</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h1>Twitter</h1>
+    <a class="twitter-timeline" href="https://twitter.com/ningbit" data-widget-id="367720470310711296">Tweets by @ningbit</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+  <h1>Tweets @ningbit</h1>
+    <a class="twitter-timeline" href="https://twitter.com/search?q=%40ningbit" data-widget-id="370245630251126784">Tweets about @ningbit</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+</section>
+
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/ningbit">@ningbit</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'ningbit',
+            count: 3,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Ning Yap -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
